@@ -8,7 +8,8 @@ public class RayCastEnemigoPelea : MonoBehaviour
     private float rango = 1.5f;
     public LayerMask Layerjugador;
     private bool detectado = false;
-    private NavMeshAgent agente; 
+    private NavMeshAgent agente;
+    private Animator animacion; 
     private float distancia= 0.5f;
     public string Escena="Battle";
 
@@ -25,6 +26,7 @@ public class RayCastEnemigoPelea : MonoBehaviour
     void Start()
     {
         agente = GetComponent<NavMeshAgent>();
+        animacion = GetComponent<Animator>();
         if(agente != null){
             agente.stoppingDistance = distancia;
         }
@@ -56,6 +58,9 @@ public class RayCastEnemigoPelea : MonoBehaviour
                 if(!detectado){
                 detectado = true;
                 Debug.Log("JUGADOR DETECTADO");
+                if(animacion != null){
+                    animacion.SetBool("MovSlime",true);
+                }
                 }
                 if (agente != null)
                 {
@@ -71,7 +76,10 @@ public class RayCastEnemigoPelea : MonoBehaviour
             if(detectado){
                 detectado = false;
                 Debug.Log("JUGADOR ESCAPADO, FUERA DE RANGO");
-                
+
+            if(animacion != null){
+                    animacion.SetBool("MovSlime",false);
+                }  
             }
             if (agente != null)
             {
