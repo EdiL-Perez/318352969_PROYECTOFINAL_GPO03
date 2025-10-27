@@ -73,6 +73,11 @@ public class CameraZoomZigzag : MonoBehaviour
     IEnumerator RotacionCamera(){
 
         yield return new WaitForSeconds(0.1f); 
+
+        if (BattleManager != null)
+        {
+            BattleManager.InstanciarParticipantes();
+        }
         Quaternion startRotation = transform.rotation;
         Quaternion targetRotation = startRotation * Quaternion.Euler(0, 180, 0);
         

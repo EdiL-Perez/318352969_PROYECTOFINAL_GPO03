@@ -10,7 +10,31 @@ public class BattleManager : MonoBehaviour
     public PlayerStatsLogica playerStats;
     public EnemyStatsLogica EnemyStats;
 
+    public GameObject Jugadorprefab; // Prefab del Jugador de Combate
+    public GameObject Enemigoprefab;  // Prefab del Enemigo de Combate
+    public Transform PlayerSpawn; // Punto donde aparece el jugador
+    public Transform EnemySpawn;
+
+    private GameObject jugadorinstanciado;
+    private GameObject enemigoinstanciado;
+
     public HUDBattle hudManager;
+
+    public void InstanciarParticipantes()
+    {
+        // 1. Instanciar Jugador
+        jugadorinstanciado = Instantiate(Jugadorprefab, PlayerSpawn.position, PlayerSpawn.rotation);
+        // 2. Instanciar Enemigo
+        enemigoinstanciado = Instantiate(Enemigoprefab, EnemySpawn.position, EnemySpawn.rotation);
+
+        // 3. Asignar las estadísticas al BattleManager (¡Crucial!)
+        // Los scripts CombatPlayerStats y CombatEnemyStats se ejecutan en Start/Awake del objeto instanciado.
+        // Solo necesitamos que el BattleManager tenga la referencia:
+        playerStats = jugadorinstanciado.GetComponent<PlayerStatsLogica>();
+        EnemyStats = enemigoinstanciado.GetComponent<EnemyStatsLogica>();
+        //Debug.Log("Participantes instanciados y referencias actualizadas.");
+        // El resto de la lógica de carga de stats se maneja en el Start/Awake de los prefabs.
+    }
 
 
 
