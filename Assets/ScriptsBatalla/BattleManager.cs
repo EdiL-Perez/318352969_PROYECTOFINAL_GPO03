@@ -89,6 +89,7 @@ public class BattleManager : MonoBehaviour
         
         // 2. Ejecutar la acción
         Debug.Log("Jugador ataca");
+        playerStats.AnimarAtaque();
         
         // Aplicar daño (Asume que el daño es fijo por simplicidad)
         EnemyStats.DañoRecibido(playerStats.Ataque);
@@ -106,7 +107,9 @@ public class BattleManager : MonoBehaviour
         
         // Simular el ataque del enemigo
         Debug.Log("Enemigo ataca!");
+        EnemyStats.AnimarAtaque();
         playerStats.DañoRecibido(EnemyStats.Ataque);
+        yield return new WaitForSeconds(1.5f); 
         // Pasa a chequear el estado y el fin del turno
         StartCoroutine(FinalTurno());
     }
