@@ -1388,7 +1388,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4058852915679833821, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1895300644}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
       insertIndex: -1
@@ -1399,6 +1402,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
       insertIndex: -1
       addedObject: {fileID: 926760674}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 926760679}
   m_SourcePrefab: {fileID: 100100000, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
 --- !u!1 &114913919 stripped
 GameObject:
@@ -3393,6 +3399,11 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!4 &303730412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4058852915679833821, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
+  m_PrefabInstance: {fileID: 96925295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &345414428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8498,6 +8509,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
   m_PrefabInstance: {fileID: 96925295}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &926760679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926760671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b56092da1e16540a3951ae4176263b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 919132149155446097, guid: 75d0582f3fe2d564b8f6c1b3679d87fc, type: 3}
+  weaponMountPoint: {fileID: 1895300644}
 --- !u!1 &941981974
 GameObject:
   m_ObjectHideFlags: 0
@@ -18925,6 +18950,37 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1895300643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895300644}
+  m_Layer: 0
+  m_Name: PuntoArma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895300644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895300643}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.00064, y: 0.00133, z: -0.00047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 303730412}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1898688749
 PrefabInstance:
   m_ObjectHideFlags: 0
