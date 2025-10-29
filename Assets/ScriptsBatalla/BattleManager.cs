@@ -57,7 +57,7 @@ public class BattleManager : MonoBehaviour
     {
         Debug.Log("Turno del Jugador. Mostrando opciones del HUD.");
         
-        // Muestra las opciones de Ataqueetc.
+        // Muestra las opciones de Ataquee tc.
         if (hudManager != null)
         {
             hudManager.mostraropciones(); // 
@@ -109,14 +109,13 @@ public class BattleManager : MonoBehaviour
         Debug.Log("Enemigo ataca!");
         EnemyStats.AnimarAtaque();
         playerStats.DañoRecibido(EnemyStats.Ataque);
-        yield return new WaitForSeconds(1.5f); 
         // Pasa a chequear el estado y el fin del turno
         StartCoroutine(FinalTurno());
     }
     IEnumerator FinalTurno()
     {
         // Esperar un momento para que las animaciones de daño terminen
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1.5f); 
 
         // 1. Chequeo de Victoria/Derrota
         if (EnemyStats.VidaActualHP <= 0)

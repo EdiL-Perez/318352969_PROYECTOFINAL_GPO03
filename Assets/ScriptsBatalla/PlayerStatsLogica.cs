@@ -44,9 +44,10 @@ public class PlayerStatsLogica : MonoBehaviour
         }
     }
 
-    public void AnimarAtaque()
-    {
-        if (anim != null) anim.SetTrigger("Ataque");
+    public void AnimarAtaque(){
+        if (anim != null){
+            anim.SetTrigger("Ataque");
+        }
     }
 
 
