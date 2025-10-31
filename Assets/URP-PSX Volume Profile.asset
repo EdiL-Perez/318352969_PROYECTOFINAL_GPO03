@@ -128,28 +128,28 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0}
   grilleOpacity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.4
   grilleCounterOpacity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.2
   grilleResolution:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 360
   grilleCounterResolution:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 540
   grilleUvRotation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1.618034
   grilleBrightness:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 15
   grilleUvMidPoint:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.5
   grilleShift:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 1, y: 1, z: 1}
 --- !u!114 &-6764837350760265993
 MonoBehaviour:
@@ -388,7 +388,7 @@ MonoBehaviour:
   active: 1
   patternIndex:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   ditherThreshold:
     m_OverrideState: 1
     m_Value: 512
