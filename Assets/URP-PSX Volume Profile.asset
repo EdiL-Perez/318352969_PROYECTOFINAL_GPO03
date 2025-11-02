@@ -92,10 +92,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.2
   screenBendX:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1000
   screenBendY:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1000
   vignetteAmount:
     m_OverrideState: 1
@@ -119,37 +119,37 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 250
   chromaticRed:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: 0}
   chromaticGreen:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: 0}
   chromaticBlue:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: 0}
   grilleOpacity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.4
   grilleCounterOpacity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.2
   grilleResolution:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 360
   grilleCounterResolution:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 540
   grilleUvRotation:
-    m_OverrideState: 0
-    m_Value: 1.618034
+    m_OverrideState: 1
+    m_Value: 90
   grilleBrightness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 15
   grilleUvMidPoint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.5
   grilleShift:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1}
 --- !u!114 &-6764837350760265993
 MonoBehaviour:
@@ -298,16 +298,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a1bd58dd7548198609eabd8ae2bb7d, type: 3}
   m_Name: Pixelation
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   widthPixelation:
     m_OverrideState: 1
     m_Value: 512
   heightPixelation:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 512
   colorPrecision:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 32
 --- !u!114 &-2625472685911782924
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eb3b8fb939d9b41b04b5621e6d36dd, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   fogDensity:
     m_OverrideState: 1
     m_Value: 1
