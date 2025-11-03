@@ -69,7 +69,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: -20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3888361408635208671}
-    m_Position: {x: 390, y: 110, z: 0}
+    m_Position: {x: 390, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -7281649497345486873}
@@ -180,7 +180,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: metarig|ReposoIso
+  m_Name: metarig|ReposoBattle
   m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
@@ -194,7 +194,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -4246919212651982474, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
+  m_Motion: {fileID: 5484840719999714566, guid: 6d4aea7f2bc1d9d468100c00066d0626, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

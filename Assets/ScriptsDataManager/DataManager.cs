@@ -16,6 +16,15 @@ public class DataManager : MonoBehaviour
     // Ataque base (asumimos que no cambia en el Overworld)
     public int jugadorAtaque;
 
+    [Header("Inventario del Jugador")]
+    // String para guardar el NOMBRE o ID del sprite del arma actual
+    public string armaActualID;
+
+    // Lista para guardar los ID de los objetos curativos (máximo 4)
+    public List<string> objetosCurativosIDs = new List<string>();
+
+
+
     // --- 2. DATOS TEMPORALES DEL ENEMIGO ---
     [Header("Datos del Enemigo en Combate")]
     // HP del enemigo que se encontró (para inicializar el combate)
@@ -47,6 +56,16 @@ public class DataManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public bool AddCurativo(string itemID)
+{
+    if (objetosCurativosIDs.Count < 4)
+    {
+        objetosCurativosIDs.Add(itemID);
+        return true;
+    }
+    return false; // Inventario lleno
+}
 
     /// <summary>
     /// Llamada desde el script del enemigo al iniciar el contacto.
