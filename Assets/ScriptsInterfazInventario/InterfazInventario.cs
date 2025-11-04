@@ -5,19 +5,28 @@ using System.Collections.Generic;
 public class InterfazInventario : MonoBehaviour
 {
     [Header("Componentes UI")]
-    public Image armaSlotImage;             // La imagen del slot del arma
-    public List<Image> curativoSlotImages;  // Las 4 imágenes de los slots curativos
+    public Image armaSlotImage;             // Slot 1 Arma (Espada/Varita)
+    public List<Image> curativoSlotImages;  //Slots 2 al 5 Items Curativos
 
-    [Header("Assets (Iconos)")]
-    public Sprite iconoArmaDefault;
+    // --- DEFINICIÓN DE IDS ---
+    // Usamos constantes para evitar errores tipográficos
+    private const string ID_ESPADA_BASICA = "EspadaBasica";
+    private const string ID_VARITA_MAGICA = "VaritaMagica";
+    private const string ID_POCION = "Pocion";
+
+    [Header("Assets (Iconos de Items)")]
+    // Sprites que asignarás en el Inspector. ¡MANTÉN ESTE ORDEN!
+    public Sprite[] itemIconSprites; 
     public Sprite iconoSlotVacio;
-    
-    // Lista de todos los sprites/iconos disponibles (Asignar en el Inspector)
-    public List<Sprite> availableItemIcons; 
-    
-    // Un diccionario para mapear ID (string) a Sprite (visual)
-    private Dictionary<string, Sprite> iconMap = new Dictionary<string, Sprite>();
 
+
+    /* ORDEN ESPERADO EN EL ARRAY itemIconSprites (Inspector):
+     * 0: Sprite de Espada Basica
+     * 1: Sprite de Varita Magica
+     * 2: Sprite de Pocion
+     * (Asegúrate de que tus 3 Sprites estén en este orden)
+     */
+    
     void Start()
     {
         // Inicializar el mapeo de iconos (debes crear esta lógica si es necesario)
@@ -32,34 +41,26 @@ public class InterfazInventario : MonoBehaviour
         
         // --- 1. ACTUALIZAR SLOT DEL ARMA ---
         string armaID = DataManager.Instance.armaActualID;
-        
-        // Por simplicidad, usamos el iconoDefault. En un juego real, usarías iconMap.
-        if (armaID == "EspadaLarga")
-        {
-            armaSlotImage.sprite = iconoArmaDefault;
-        }
-        else
-        {
-            // Lógica para encontrar el icono del arma (por ejemplo, en un Dictionary)
-            armaSlotImage.sprite = GetIconById(armaID); 
-        }
+        // Asignamos el sprite que la función de mapeo nos dé
+        armaSlotImage.sprite = GetIconById(armaID);
 
-        // --- 2. ACTUALIZAR SLOTS CURATIVOS ---
+        // 2. ACTUALIZAR SLOTS CURATIVOS (4 espacios)
         List<string> curativos = DataManager.Instance.objetosCurativosIDs;
-
+    
         for (int i = 0; i < curativoSlotImages.Count; i++)
         {
             if (i < curativos.Count)
             {
                 // Mostrar el icono del objeto curativo
-                curativoSlotImages[i].sprite = GetIconById(curativos[i]); 
-                curativoSlotImages[i].color = Color.white; // Icono visible
+                string itemID = curativos[i];
+                curativoSlotImages[i].sprite = GetIconById(itemID); 
+                curativoSlotImages[i].color = Color.white; // Icono visible (sin transparencia)
             }
             else
             {
                 // Slot vacío
                 curativoSlotImages[i].sprite = iconoSlotVacio;
-                curativoSlotImages[i].color = new Color(1f, 1f, 1f, 0.3f); // Transparente o gris
+                curativoSlotImages[i].color = new Color(1f, 1f, 1f, 0.3f); // Gris/transparente
             }
         }
     }
@@ -67,11 +68,21 @@ public class InterfazInventario : MonoBehaviour
     // Función de ejemplo para obtener un icono
     private Sprite GetIconById(string id)
     {
-        // Lógica real: buscar el sprite en un diccionario o base de datos.
-        // Por ahora, solo devuelve un icono de ejemplo:
-        if (id == "Pocion") return availableItemIcons[0]; // Asume que la poción es el primer sprite en la lista
-        if (id == "EspadaLarga") return availableItemIcons[1];
-        
-        return iconoArmaDefault; // Fallback
+        if (id == ID_ESPADA_BASICA)
+        {
+            if (itemIconSprites.Length > 0) return itemIconSprites[0]; 
+        }
+        else if (id == ID_VARITA_MAGICA)
+        {
+            if (itemIconSprites.Length > 1) return itemIconSprites[1]; 
+        }
+        else if (id == ID_POCION)
+        {
+            // Solo tienes un item curativo, por lo que este sprite se repite
+            if (itemIconSprites.Length > 2) return itemIconSprites[2]; 
+        }
+
+        return iconoSlotVacio; // Devuelve el sprite vacío si no hay coincidencia (ej: ID incorrecto o "Ninguna")
+
     }
 }

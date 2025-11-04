@@ -17,10 +17,10 @@ public class DataManager : MonoBehaviour
     public int jugadorAtaque;
 
     [Header("Inventario del Jugador")]
-    // String para guardar el NOMBRE o ID del sprite del arma actual
-    public string armaActualID;
-
-    // Lista para guardar los ID de los objetos curativos (máximo 4)
+    [Header("Inventario y Estado")]
+    // ID del arma actual (ej: "EspadaBasica", "VaritaMagica")
+    public string armaActualID; 
+    // Lista de ID's de los objetos curativos (máximo 4 slots)
     public List<string> objetosCurativosIDs = new List<string>();
 
 

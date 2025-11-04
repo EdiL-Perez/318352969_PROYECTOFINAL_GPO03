@@ -19,6 +19,7 @@ public class PickupObjetos : MonoBehaviour
             if (tipoObjeto == ItemType.Weapon)
             {
                 // Lógica de reemplazo de arma
+                string armaAnteriorID = DataManager.Instance.armaActualID;
                 DataManager.Instance.armaActualID = itemID;
                 pickedUp = true;
             }

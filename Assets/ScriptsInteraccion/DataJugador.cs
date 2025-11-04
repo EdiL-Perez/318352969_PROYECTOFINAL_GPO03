@@ -6,6 +6,10 @@ public class Datajugador : MonoBehaviour
     public int baseMaxHP = 100;
     public int baseAttack = 15;
 
+    [Header("Arma Inicial")]
+    public string initialWeaponID = "EspadaBasica";
+    
+
     
     // Bandera para asegurar que la inicialización solo pase una vez
     private bool dataInitialized = false; 
@@ -43,6 +47,9 @@ public class Datajugador : MonoBehaviour
                 DataManager.Instance.jugadorMaxHP = baseMaxHP;
                 DataManager.Instance.jugadorHPActual = baseMaxHP; // La vida actual inicia al máximo
                 DataManager.Instance.jugadorAtaque = baseAttack;
+
+                DataManager.Instance.armaActualID = initialWeaponID; 
+                Debug.Log($"Arma inicial '{initialWeaponID}' asignada al DataManager.");
             }
             
             dataInitialized = true;
