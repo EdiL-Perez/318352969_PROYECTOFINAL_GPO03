@@ -100,4 +100,21 @@ public class arma : MonoBehaviour
         
         Debug.Log($"Arma '{newWeaponPrefab.name}' montada en el personaje.");
     }
+
+    public void UpdateWeaponVisual()
+    {
+        if (DataManager.Instance == null) return;
+
+        string currentWeaponID = DataManager.Instance.armaActualID;
+    
+        // 1. Encontrar el prefab que debe montar
+        GameObject weaponPrefabToMount = FindWeaponPrefab(currentWeaponID); 
+    
+        // 2. Si se encuentra un prefab, montarlo
+        if (weaponPrefabToMount != null && weaponMountPoint != null)
+        {
+            MountWeapon(weaponPrefabToMount);
+            Debug.Log($"Visual del arma actualizado a: {currentWeaponID}");
+        }
+    }
 }

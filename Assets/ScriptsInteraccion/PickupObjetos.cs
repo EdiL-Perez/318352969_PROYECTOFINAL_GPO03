@@ -9,6 +9,18 @@ public class PickupObjetos : MonoBehaviour
     [Header("Referencias UI")]
     // Referencia al script que debe actualizarse
     public InterfazInventario inventoryUI; 
+    public arma playerWeaponAttachment;
+
+
+    private void Start()
+    {
+    // Buscar el script WeaponAttachment en el jugador al iniciar la escena
+    GameObject playerObj = GameObject.FindGameObjectWithTag("Player"); 
+        if (playerObj != null)
+        {
+            playerWeaponAttachment = playerObj.GetComponent<arma>();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,6 +33,10 @@ public class PickupObjetos : MonoBehaviour
                 // Lógica de reemplazo de arma
                 string armaAnteriorID = DataManager.Instance.armaActualID;
                 DataManager.Instance.armaActualID = itemID;
+                if (playerWeaponAttachment != null)
+                {
+                    playerWeaponAttachment.UpdateWeaponVisual();
+                }
                 pickedUp = true;
             }
             else if (tipoObjeto == ItemType.Healing)
