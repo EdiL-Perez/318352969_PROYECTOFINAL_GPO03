@@ -7,6 +7,8 @@ public class PlayerStatsLogica : MonoBehaviour
     public int Ataque;
     private CharacterController controller;
 
+    public HUDBattle hudManager;
+
     private Animator anim;
 
 
@@ -24,6 +26,7 @@ public class PlayerStatsLogica : MonoBehaviour
         
         
         Debug.Log($"DATOS INSTANCIADOS JUGADOR, HP: {VidaActualHP}/{VidaMaxHP}, Ataque: {Ataque}");
+        
     }
 
     // Update is called once per frame
@@ -36,6 +39,11 @@ public class PlayerStatsLogica : MonoBehaviour
         VidaActualHP -= damage;
 
         DataManager.Instance.jugadorHPActual = VidaActualHP;
+
+        if (hudManager != null)
+        {
+            hudManager.UpdatePlayerStatsUI();
+        }
 
         if(VidaActualHP >0){
             if (anim != null){

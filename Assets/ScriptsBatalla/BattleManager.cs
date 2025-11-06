@@ -18,6 +18,8 @@ public class BattleManager : MonoBehaviour
     private GameObject jugadorinstanciado;
     private GameObject enemigoinstanciado;
 
+    public BattleInventoryUI battleInventoryUI;
+
     public HUDBattle hudManager;
 
     public void InstanciarParticipantes()
@@ -31,6 +33,15 @@ public class BattleManager : MonoBehaviour
         // Los scripts CombatPlayerStats y CombatEnemyStats se ejecutan en Start/Awake del objeto instanciado.
         // Solo necesitamos que el BattleManager tenga la referencia:
         playerStats = jugadorinstanciado.GetComponent<PlayerStatsLogica>();
+        if (playerStats != null)
+        {   
+            playerStats.hudManager = hudManager;
+        }
+
+        if (battleInventoryUI != null)
+        {
+            battleInventoryUI.battleManager = this; 
+        }
         EnemyStats = enemigoinstanciado.GetComponent<EnemyStatsLogica>();
         //Debug.Log("Participantes instanciados y referencias actualizadas.");
         // El resto de la lógica de carga de stats se maneja en el Start/Awake de los prefabs.
@@ -95,6 +106,18 @@ public class BattleManager : MonoBehaviour
         EnemyStats.DañoRecibido(playerStats.Ataque);
 
         // 3. Revisar el estado y pasar al siguiente turno
+        EndPlayerAction();
+    }
+
+    public void EndPlayerAction()
+    {
+        // Ocultar cualquier panel de sub-opciones (Inventario) si está visible
+        if (battleInventoryUI != null)
+        {
+            battleInventoryUI.HideInventoryPanel(); 
+        }
+
+        // Inicia el proceso de finalización del turno (chequeo de estado y transición)
         StartCoroutine(FinalTurno());
     }
     IEnumerator AtaqueEnemigo()

@@ -16,6 +16,9 @@ public class DataManager : MonoBehaviour
     // Ataque base (asumimos que no cambia en el Overworld)
     public int jugadorAtaque;
 
+
+    private const int baseAtaqueSinArma = 15;
+
     [Header("Inventario del Jugador")]
     [Header("Inventario y Estado")]
     // ID del arma actual (ej: "EspadaBasica", "VaritaMagica")
@@ -58,14 +61,37 @@ public class DataManager : MonoBehaviour
     }
 
     public bool AddCurativo(string itemID)
-{
-    if (objetosCurativosIDs.Count < 4)
     {
-        objetosCurativosIDs.Add(itemID);
-        return true;
+        if (objetosCurativosIDs.Count < 4)
+        {
+            objetosCurativosIDs.Add(itemID);
+            return true;
+        }
+        return false; // Inventario lleno
     }
-    return false; // Inventario lleno
-}
+
+
+    public void ActualizarAtaque(string nuevaArmaID)
+    {
+        int bonoDeArma = 0;
+    
+        // LÓGICA DE BONIFICACIÓN POR ARMA
+        if (nuevaArmaID == "EspadaBasica")
+        {
+        // La espada inicial no da bono, o su bono es 0.
+            bonoDeArma = 0; 
+        }
+        else if (nuevaArmaID == "VaritaMagica") 
+        {
+        // La varita mágica da un bono de +10 al ataque base
+        bonoDeArma = 10;
+        }
+
+        this.jugadorAtaque = baseAtaqueSinArma + bonoDeArma;
+    
+        Debug.Log($"Ataque actualizado a: {this.jugadorAtaque}");
+
+    }
 
     /// <summary>
     /// Llamada desde el script del enemigo al iniciar el contacto.

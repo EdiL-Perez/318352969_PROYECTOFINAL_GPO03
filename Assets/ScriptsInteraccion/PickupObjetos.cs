@@ -33,6 +33,12 @@ public class PickupObjetos : MonoBehaviour
                 // Lógica de reemplazo de arma
                 string armaAnteriorID = DataManager.Instance.armaActualID;
                 DataManager.Instance.armaActualID = itemID;
+
+
+                if (DataManager.Instance != null)
+                {
+                    DataManager.Instance.ActualizarAtaque(itemID); 
+                }
                 if (playerWeaponAttachment != null)
                 {
                     playerWeaponAttachment.UpdateWeaponVisual();
@@ -58,4 +64,8 @@ public class PickupObjetos : MonoBehaviour
             }
         }
     }
+
+
+
+
 }
