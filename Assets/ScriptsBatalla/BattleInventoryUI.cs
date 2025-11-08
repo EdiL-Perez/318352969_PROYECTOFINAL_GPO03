@@ -12,6 +12,8 @@ public class BattleInventoryUI : MonoBehaviour
     [Header("Slots Curativos")]
     public Button[] inventoryButtons = new Button[4]; 
     public TextMeshProUGUI feedbackText; 
+
+    public Button BotonRegresar;
     
     // ... (Constantes y referencias) ...
     private const int CURACION_BASE = 30; 
@@ -46,6 +48,24 @@ public class BattleInventoryUI : MonoBehaviour
         {
             inventoryPanel.SetActive(false);
         }
+    }
+
+
+    public void ExitInventory()
+    {
+        // 1. Ocultar el panel de inventario inmediatamente
+        HideInventoryPanel();
+
+        // 2. Reactivar las opciones principales (Ataque, Items, Defensa) del HUD.
+        if (battleManager != null && battleManager.hudManager != null)
+        {
+            // El HUDManager debe tener una función para reactivar los botones principales.
+            battleManager.hudManager.mostraropciones(); 
+        }
+
+        Debug.Log("Saliendo del inventario. Opciones de turno reactivadas.");
+        
+        // El estado del turno (PLAYER_TURN) no se toca, solo se cambia la interfaz.
     }
 
     // --- LÓGICA DE INVENTARIO ---
