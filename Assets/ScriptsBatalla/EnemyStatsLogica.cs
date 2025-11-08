@@ -1,10 +1,16 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
 
 public class EnemyStatsLogica : MonoBehaviour
 {
     public int VidaActualHP;
     public int VidaMaxHP;
     public int Ataque;
+
+    public TextMeshProUGUI enemyHPText;
+    
 
     private Animator anim;
     
@@ -20,6 +26,7 @@ public class EnemyStatsLogica : MonoBehaviour
         VidaMaxHP=DataManager.Instance.enemigoHPInicial;
         VidaActualHP=VidaMaxHP;
         Ataque=DataManager.Instance.enemigoAtaque;
+        UpdateEnemyStatsUI();
         
         Debug.Log($"DATOS INSTANCIADOS ENEMIGO, HP: {VidaActualHP}/{VidaMaxHP}, Ataque: {Ataque}");
         
@@ -44,12 +51,24 @@ public class EnemyStatsLogica : MonoBehaviour
                     anim.SetBool("Muerte",true);
                 }
             }
+        UpdateEnemyStatsUI(); 
     }
 
 
     public void AnimarAtaque()
     {
         if (anim != null) anim.SetTrigger("Ataque");
+    }
+
+
+    public void UpdateEnemyStatsUI()
+    {
+
+        // 2. ACTUALIZAR TEXTO DE VIDA (NUMÉRICO)
+        if (enemyHPText != null)
+        {
+            enemyHPText.text = $"HP: {VidaActualHP} / {VidaMaxHP}";
+        }
     }
 
 }

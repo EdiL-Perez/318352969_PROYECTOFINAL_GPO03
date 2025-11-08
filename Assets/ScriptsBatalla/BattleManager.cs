@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class BattleManager : MonoBehaviour
     private GameObject enemigoinstanciado;
 
     public BattleInventoryUI battleInventoryUI;
+    public TextMeshProUGUI enemyHPTextUI;
 
     public HUDBattle hudManager;
 
@@ -43,6 +46,11 @@ public class BattleManager : MonoBehaviour
             battleInventoryUI.battleManager = this; 
         }
         EnemyStats = enemigoinstanciado.GetComponent<EnemyStatsLogica>();
+        if (EnemyStats != null)
+        {
+            EnemyStats.enemyHPText = enemyHPTextUI;
+        }
+        
         //Debug.Log("Participantes instanciados y referencias actualizadas.");
         // El resto de la lógica de carga de stats se maneja en el Start/Awake de los prefabs.
     }
