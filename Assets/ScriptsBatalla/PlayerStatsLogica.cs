@@ -7,6 +7,8 @@ public class PlayerStatsLogica : MonoBehaviour
     public int Ataque;
     private CharacterController controller;
 
+    public bool estaDefendiendo = false;
+
     public HUDBattle hudManager;
 
     private Animator anim;
@@ -36,6 +38,13 @@ public class PlayerStatsLogica : MonoBehaviour
     }
 
     public void DañoRecibido(int damage){
+
+        if (estaDefendiendo)
+        {
+            Debug.Log("El jugador se está defendiendo y anula el daño.");
+        
+            return; // Detiene la función, el HP no se reduce.
+        }
         VidaActualHP -= damage;
 
         DataManager.Instance.jugadorHPActual = VidaActualHP;
@@ -50,6 +59,19 @@ public class PlayerStatsLogica : MonoBehaviour
                 anim.SetTrigger("Daño");
             } 
         }
+    }
+
+    public void ActivarDefensa()
+    {
+        estaDefendiendo = true;
+    // Opcional: Animación o efecto visual de defensa
+        Debug.Log("Defensa Activada.");
+    }
+
+    public void DesactivarDefensa()
+    {
+        estaDefendiendo = false;
+        Debug.Log("Defensa Desactivada.");
     }
 
     public void AnimarAtaque(){

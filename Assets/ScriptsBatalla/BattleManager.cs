@@ -75,6 +75,11 @@ public class BattleManager : MonoBehaviour
     void PlayerTurn()
     {
         Debug.Log("Turno del Jugador. Mostrando opciones del HUD.");
+        if (playerStats != null)
+        {
+            playerStats.DesactivarDefensa();
+        }
+        Debug.Log("Turno del Jugador. Mostrando opciones del HUD.");
         
         // Muestra las opciones de Ataquee tc.
         if (hudManager != null)
@@ -115,6 +120,27 @@ public class BattleManager : MonoBehaviour
 
         // 3. Revisar el estado y pasar al siguiente turno
         EndPlayerAction();
+    }
+
+
+    public void Defenderjugador()
+    {
+
+        if (EstadoActual != BattleState.PLAYER_TURN || playerStats == null) 
+        {
+            return;
+        }
+        
+        if (hudManager != null)
+        {
+        // La función ocultaropciones() deshabilita todos los botones (Ataque, Defensa, Items).
+            hudManager.ocultaropciones(); 
+        }
+        // 1. El jugador activa el estado de defensa
+        playerStats.ActivarDefensa();
+
+    // 2. Pasa el turno
+        EndPlayerAction(); 
     }
 
     public void EndPlayerAction()

@@ -8,6 +8,7 @@ public class HUDBattle : MonoBehaviour
     public GameObject  Interfaz;
     public BattleManager BattleManager; 
     public Button Botonataque;
+    public Button BotonDefender;
 
 
 
@@ -47,6 +48,11 @@ public class HUDBattle : MonoBehaviour
         {
             BotonItems.interactable = true;
         }
+
+        if(BotonDefender != null)
+        {
+            BotonDefender.interactable = true;
+        }
         UpdatePlayerStatsUI();
 
     }
@@ -59,6 +65,12 @@ public class HUDBattle : MonoBehaviour
             BotonItems.interactable = false;
         }
 
+        if(BotonDefender != null)
+        {
+            BotonDefender.interactable = false;
+        }
+
+
     }
 
 
@@ -67,6 +79,15 @@ public class HUDBattle : MonoBehaviour
         {
             // Esta función está en BattleManager y continúa el flujo de turnos
             BattleManager.Ataquejugador(); 
+        }
+    }
+
+    public void PresionarBotonDefender()
+    {
+        if (BattleManager != null)
+        {
+        // 2. Notificamos al BattleManager para que ejecute la defensa
+            BattleManager.Defenderjugador(); 
         }
     }
 

@@ -3757,6 +3757,7 @@ RectTransform:
   - {fileID: 357367255}
   - {fileID: 235286755}
   - {fileID: 504302680}
+  - {fileID: 1671301602}
   - {fileID: 370708214}
   - {fileID: 325562755}
   - {fileID: 817205806}
@@ -3782,6 +3783,7 @@ MonoBehaviour:
   Interfaz: {fileID: 607249392}
   BattleManager: {fileID: 1028668047}
   Botonataque: {fileID: 1141871033}
+  BotonDefender: {fileID: 1979680911}
   playerHPText: {fileID: 1689440897}
   playerAttackText: {fileID: 1096662680}
   battleInventoryUI: {fileID: 2067507750}
@@ -7603,6 +7605,81 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1671301601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671301602}
+  - component: {fileID: 1671301604}
+  - component: {fileID: 1671301603}
+  m_Layer: 5
+  m_Name: IconEN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1671301602
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671301601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 607249396}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -646.87, y: 287.03}
+  m_SizeDelta: {x: 278.26, y: 259.9374}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1671301603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671301601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c15a5630fb995074fa4d0d0346b14bc3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1671301604
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671301601}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1678044725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8463,7 +8540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1979680912}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 607249397}
+        m_TargetAssemblyTypeName: HUDBattle, Assembly-CSharp
+        m_MethodName: PresionarBotonDefender
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1979680912
 MonoBehaviour:
   m_ObjectHideFlags: 0
