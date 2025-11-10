@@ -4916,6 +4916,7 @@ MonoBehaviour:
   EnemySpawn: {fileID: 700890084}
   battleInventoryUI: {fileID: 2067507750}
   enemyHPTextUI: {fileID: 649699907}
+  healingEffectPrefab: {fileID: 2146787811397496919, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
   hudManager: {fileID: 607249397}
 --- !u!4 &1028668048
 Transform:
@@ -4938,7 +4939,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 2343680974646625604}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 159bd71fe5c67b24eadc1cc31fc68e8f, type: 3}
   m_Name: 
@@ -9199,6 +9200,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &859343421138187484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 716294550575655855, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146787811397496919, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_Name
+      value: EfectoSanar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146787811397496919, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd5899cf7c38c024f87bef5542dd0c27, type: 3}
 --- !u!1001 &898105673687931426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9278,7 +9340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458908572477882171, guid: 98173ad6b56299f45a0d14b855bee27c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: 74.2
       objectReference: {fileID: 0}
     - target: {fileID: 1458908572477882171, guid: 98173ad6b56299f45a0d14b855bee27c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9315,6 +9377,14 @@ PrefabInstance:
     - target: {fileID: 1654247948139228445, guid: 98173ad6b56299f45a0d14b855bee27c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594987029091973460, guid: 98173ad6b56299f45a0d14b855bee27c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594987029091973460, guid: 98173ad6b56299f45a0d14b855bee27c, type: 3}
+      propertyPath: curacionParticulas
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9383,3 +9453,4 @@ SceneRoots:
   - {fileID: 2081323304}
   - {fileID: 991573800}
   - {fileID: 1228049285}
+  - {fileID: 859343421138187484}

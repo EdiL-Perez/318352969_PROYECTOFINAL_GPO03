@@ -23,6 +23,11 @@ public class BattleManager : MonoBehaviour
     public BattleInventoryUI battleInventoryUI;
     public TextMeshProUGUI enemyHPTextUI;
 
+
+    [Header("Efectos Visuales")]
+    // 
+    public GameObject healingEffectPrefab;
+
     public HUDBattle hudManager;
 
     public void InstanciarParticipantes()
@@ -53,6 +58,24 @@ public class BattleManager : MonoBehaviour
         
         //Debug.Log("Participantes instanciados y referencias actualizadas.");
         // El resto de la lógica de carga de stats se maneja en el Start/Awake de los prefabs.
+    }
+
+    public void PlayHealingEffect()
+    {
+    if (healingEffectPrefab == null || jugadorinstanciado == null)
+    {
+        Debug.LogWarning("No se puede reproducir el efecto de curación: Falta el prefab o el jugador.");
+        return;
+    }
+    
+     //Calcula una posición ligeramente por encima del jugador
+    //Vector3 effectPosition = jugadorinstanciado.transform.position + Vector3.up * 1f;
+
+    // Instanciar el prefab del efecto
+    GameObject effectInstance = Instantiate(healingEffectPrefab, PlayerSpawn.position, Quaternion.identity);
+    
+    // **¡CRUCIAL!** Asegúrate de que el ParticleSystem se autodestruya al terminar.
+    // Esto lo hace el script 'AutoDestroyScript' (ver paso 3).
     }
 
 

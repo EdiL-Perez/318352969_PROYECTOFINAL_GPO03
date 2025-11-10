@@ -119,6 +119,10 @@ public class BattleInventoryUI : MonoBehaviour
                 DataManager.Instance.jugadorHPActual = DataManager.Instance.jugadorMaxHP;
             }
 
+            if (battleManager != null)
+            {
+                battleManager.PlayHealingEffect();
+            }
             // 2. Quitar el item de la lista (DataManager)
             curativos.RemoveAt(slotIndex);
 

@@ -100,3 +100,6 @@ MonoBehaviour:
   VidaActualHP: 0
   VidaMaxHP: 0
   Ataque: 0
+  estaDefendiendo: 0
+  hudManager: {fileID: 0}
+  curacionParticulas: {fileID: 0}

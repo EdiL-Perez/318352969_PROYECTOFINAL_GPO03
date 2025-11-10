@@ -11,6 +11,7 @@ public class PlayerStatsLogica : MonoBehaviour
 
     public HUDBattle hudManager;
 
+
     private Animator anim;
 
 
@@ -28,6 +29,7 @@ public class PlayerStatsLogica : MonoBehaviour
         
         
         Debug.Log($"DATOS INSTANCIADOS JUGADOR, HP: {VidaActualHP}/{VidaMaxHP}, Ataque: {Ataque}");
+
         
     }
 
@@ -79,6 +81,9 @@ public class PlayerStatsLogica : MonoBehaviour
             anim.SetTrigger("Ataque");
         }
     }
+
+
+
 
 
 }
