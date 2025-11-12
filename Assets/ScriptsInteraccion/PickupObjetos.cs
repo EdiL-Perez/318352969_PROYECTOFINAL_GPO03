@@ -12,6 +12,9 @@ public class PickupObjetos : MonoBehaviour
     public arma playerWeaponAttachment;
 
 
+    [SerializeField] private float velocidadRotacion = 50f;
+
+
     private void Start()
     {
     // Buscar el script WeaponAttachment en el jugador al iniciar la escena
@@ -20,6 +23,14 @@ public class PickupObjetos : MonoBehaviour
         {
             playerWeaponAttachment = playerObj.GetComponent<arma>();
         }
+    }
+
+
+    private void Update()
+    {
+        // Rotar el objeto alrededor del eje Y (vertical)
+        // Time.deltaTime asegura que la rotación sea suave e independiente del framerate
+        transform.Rotate(Vector3.up, velocidadRotacion * Time.deltaTime, Space.World);
     }
 
     private void OnTriggerEnter(Collider other)

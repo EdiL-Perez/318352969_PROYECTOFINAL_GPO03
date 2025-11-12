@@ -25,7 +25,7 @@ public class BattleManager : MonoBehaviour
 
 
     [Header("Efectos Visuales")]
-    // 
+    public GameObject playerAttackEffectPrefab;
     public GameObject healingEffectPrefab;
 
     public HUDBattle hudManager;
@@ -78,6 +78,30 @@ public class BattleManager : MonoBehaviour
     // Esto lo hace el script 'AutoDestroyScript' (ver paso 3).
     }
 
+    public void PlayPlayerAttackEffect()
+    {
+        if (playerAttackEffectPrefab == null || enemigoinstanciado == null)
+        {
+            Debug.LogWarning("No se puede reproducir el efecto de ataque: Falta el prefab o el enemigo.");
+            return;
+        }
+    
+        // Calcula una posición ligeramente por encima del enemigo para el impacto
+        Vector3 effectPositionBase = enemigoinstanciado.transform.position + Vector3.up * 1f; // Ajusta la altura si es necesario
+
+        Vector3 direccionHaciaJugador = (jugadorinstanciado.transform.position - enemigoinstanciado.transform.position).normalized;
+    
+        // Definimos qué tanto queremos desplazar el efecto (ej: 0.5 unidades)
+        float desplazamientoAdelante = 0.5f; 
+    
+        // La posición final es la base más el desplazamiento
+        Vector3 posicionFinal = effectPositionBase + direccionHaciaJugador * desplazamientoAdelante;
+
+        // Instanciar el prefab del efecto
+        GameObject effectInstance = Instantiate(playerAttackEffectPrefab, posicionFinal, Quaternion.identity);
+    
+    // El 'AutoDestroyScript' adjunto al prefab se encargará de destruirlo.
+    }
 
 
 
@@ -137,6 +161,7 @@ public class BattleManager : MonoBehaviour
         // 2. Ejecutar la acción
         Debug.Log("Jugador ataca");
         playerStats.AnimarAtaque();
+        PlayPlayerAttackEffect();
         
         // Aplicar daño (Asume que el daño es fijo por simplicidad)
         EnemyStats.DañoRecibido(playerStats.Ataque);
