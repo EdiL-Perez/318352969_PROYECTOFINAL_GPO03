@@ -220,13 +220,15 @@ public class BattleManager : MonoBehaviour
     IEnumerator FinalTurno()
     {
         // Esperar un momento para que las animaciones de daño terminen
-        yield return new WaitForSeconds(1.5f); 
+        yield return new WaitForSeconds(1.0f); 
 
         // 1. Chequeo de Victoria/Derrota
         if (EnemyStats.VidaActualHP <= 0)
         {
             EstadoActual = BattleState.WON;
             Debug.Log("¡Victoria! Lógica de fin de batalla...");
+            EnemyStats.ActivarAnimacionMuerte();
+            yield return new WaitForSeconds(1.5f); 
             DataManager.Instance.RegresarAlOverworld();
             yield break; // Detiene la corutina
         }
@@ -234,6 +236,8 @@ public class BattleManager : MonoBehaviour
         {
             EstadoActual = BattleState.LOST;
             Debug.Log("Derrota. Game Over...");
+            playerStats.ActivarAnimacionMuerte();
+            yield return new WaitForSeconds(1.5f); 
             yield break; // Detiene la corutina
         }
 

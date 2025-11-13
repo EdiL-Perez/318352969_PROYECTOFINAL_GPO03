@@ -46,11 +46,6 @@ public class EnemyStatsLogica : MonoBehaviour
                     anim.SetTrigger("Daño");
                 }
             }
-            else{
-                if (anim != null){
-                    anim.SetBool("Muerte",true);
-                }
-            }
         UpdateEnemyStatsUI(); 
     }
 
@@ -58,6 +53,19 @@ public class EnemyStatsLogica : MonoBehaviour
     public void AnimarAtaque()
     {
         if (anim != null) anim.SetTrigger("Ataque");
+    }
+
+    public void ActivarAnimacionMuerte()
+    {
+    // Solo si la vida realmente llegó a cero (o menos)
+        if (VidaActualHP <= 0)
+        {
+            if (anim != null)
+            {
+            // Detenemos cualquier otra animación y activamos el estado final.
+                anim.SetBool("Muerte", true); 
+            }
+        }
     }
 
 

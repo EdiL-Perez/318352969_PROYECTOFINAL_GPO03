@@ -92,6 +92,20 @@ public class PlayerStatsLogica : MonoBehaviour
     }
 
 
+    public void ActivarAnimacionMuerte()
+    {
+    // Solo si la vida realmente llegó a cero (o menos)
+        if (VidaActualHP <= 0)
+        {
+            if (anim != null)
+            {
+            // Detenemos cualquier otra animación y activamos el estado final.
+                anim.SetBool("Muerte", true); 
+            }
+        }
+    }
+
+
 
 
 
