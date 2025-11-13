@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -425,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -499,6 +507,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1387,6 +1399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1554,6 +1570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1628,6 +1648,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2296,6 +2320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2510,6 +2538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edifcio5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fad4bb1b81aa47a489b6b6af9f24811d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2630,6 +2662,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
       propertyPath: m_Name
       value: Posteluz (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3267,6 +3303,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
       propertyPath: m_Name
       value: Wall1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4261,6 +4301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4472,6 +4516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f018023b35b557b4bb547da20638bca6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4594,6 +4642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sujetador
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac450efa0cd2a534fa28d2488c469640, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4665,6 +4717,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
       propertyPath: m_Name
       value: Wall1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4787,6 +4843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4908,6 +4968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4982,6 +5046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5410,6 +5478,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8b5779773ba88ed4d992c44131e0bbd8, type: 3}
       propertyPath: m_Name
       value: Piso (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b5779773ba88ed4d992c44131e0bbd8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10313,6 +10385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4134f43404cd064f9e57152420afda8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10435,6 +10511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10509,6 +10589,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10630,6 +10714,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10963,6 +11051,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16394,6 +16486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16514,6 +16610,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
       propertyPath: m_Name
       value: Edificio2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17030,6 +17130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17475,6 +17579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17595,6 +17703,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18024,6 +18136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18098,6 +18214,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18220,6 +18340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18294,6 +18418,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18370,6 +18498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18445,6 +18577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18519,6 +18655,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23564,6 +23704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23958,6 +24102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24244,6 +24392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24516,6 +24668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24636,6 +24792,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24833,6 +24993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fabrica1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24907,6 +25071,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
       propertyPath: m_Name
       value: Fabrica1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29907,6 +30075,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34990,6 +35162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carro (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35229,6 +35405,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40593,6 +40773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40940,6 +41124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41014,6 +41202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41135,6 +41327,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41581,6 +41777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41702,6 +41902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41776,6 +41980,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
       propertyPath: m_Name
       value: Edificio2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42108,6 +42316,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47433,6 +47645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47601,6 +47817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04367a1638be12748b04204a66a820e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47675,6 +47895,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57910,6 +58134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fabrica1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57985,6 +58213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carro (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58055,6 +58287,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8b5779773ba88ed4d992c44131e0bbd8, type: 3}
       propertyPath: m_Name
       value: Piso (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b5779773ba88ed4d992c44131e0bbd8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58421,6 +58657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58495,6 +58735,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
       propertyPath: m_Name
       value: Wall1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58707,6 +58951,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58948,6 +59196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59022,6 +59274,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59615,6 +59871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64736,6 +64996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luminaria (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65201,6 +65465,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65857,6 +66125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fabrica1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65931,6 +66203,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66070,6 +66346,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66537,6 +66817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luminaria (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66704,6 +66988,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66917,6 +67205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luminaria (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66991,6 +67283,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 04367a1638be12748b04204a66a820e7, type: 3}
       propertyPath: m_Name
       value: Edificio3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04367a1638be12748b04204a66a820e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67232,6 +67528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67399,6 +67699,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fad4bb1b81aa47a489b6b6af9f24811d, type: 3}
       propertyPath: m_Name
       value: Edifcio5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fad4bb1b81aa47a489b6b6af9f24811d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67613,6 +67917,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67734,6 +68042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67808,6 +68120,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68427,6 +68743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68669,6 +68989,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
       propertyPath: m_Name
       value: Luminaria (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73731,6 +74055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4134f43404cd064f9e57152420afda8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74249,6 +74577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luminaria
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74369,6 +74701,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74632,6 +74968,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
       propertyPath: m_Name
       value: Posteluz (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75330,6 +75670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pancarta1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4383b7882105d4d48be064edd627d50f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75523,6 +75867,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80644,6 +80992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80863,6 +81215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
       propertyPath: m_Name
       value: Fabrica1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81336,6 +81692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luminaria (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b517449a0c8b814d93729c0ad299ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81410,6 +81770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
       propertyPath: m_Name
       value: Barril (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86745,6 +87109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edifcio5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fad4bb1b81aa47a489b6b6af9f24811d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86819,6 +87187,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
       propertyPath: m_Name
       value: Wall1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88008,6 +88380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed79a80eb45e53c45bd10cb0f89d116a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88146,6 +88522,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88313,6 +88693,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
       propertyPath: m_Name
       value: Posteluz (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88759,6 +89143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86d727ba8cea52e418462ab352e5c0d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88879,6 +89267,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -94495,6 +94887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fabrica1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2de87b121fee8cc4789c2ba2f8dcbc08, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -94569,6 +94965,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8244d6404b6323f4c8222667dc7e7a55, type: 3}
       propertyPath: m_Name
       value: Fuente
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8244d6404b6323f4c8222667dc7e7a55, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95160,6 +95560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95605,6 +96009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Posteluz (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95952,6 +96360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio7
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2cba87499c6b65646af96b9c106e539d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96026,6 +96438,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96359,6 +96775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed79a80eb45e53c45bd10cb0f89d116a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96433,6 +96853,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
       propertyPath: m_Name
       value: Wall1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0361ceb98272bf44d8ea3372275ae89d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96673,6 +97097,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 04367a1638be12748b04204a66a820e7, type: 3}
       propertyPath: m_Name
       value: Edificio3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04367a1638be12748b04204a66a820e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101747,6 +102175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barril (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a018f220a4e457b42bd2415038fec0c9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -101821,6 +102253,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f018023b35b557b4bb547da20638bca6, type: 3}
       propertyPath: m_Name
       value: Edificio9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f018023b35b557b4bb547da20638bca6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101960,6 +102396,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -112736,6 +113176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carro (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -118007,6 +118451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edifcio5
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fad4bb1b81aa47a489b6b6af9f24811d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -118338,6 +118786,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
       propertyPath: m_Name
       value: Carro (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -119350,6 +119802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carro (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -119674,6 +120130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Edificio6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4134f43404cd064f9e57152420afda8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -119962,6 +120422,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
       propertyPath: m_Name
       value: Posteluz (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca7d6d696fd3b1b4ab34ff571b6e502c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -120373,6 +120837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carro (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -120655,6 +121123,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
       propertyPath: m_Name
       value: Caja (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e4e3a11f1464334fa259c3b4b23bd96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
