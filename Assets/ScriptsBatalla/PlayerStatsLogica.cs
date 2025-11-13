@@ -63,6 +63,15 @@ public class PlayerStatsLogica : MonoBehaviour
         }
     }
 
+
+    public void SincronizarHP()
+    {
+    // Carga el valor curado que está guardado en el Singleton.
+        VidaActualHP = DataManager.Instance.jugadorHPActual; 
+    
+        Debug.Log($"HP Sincronizado. Nuevo HP local: {VidaActualHP}");
+    }
+
     public void ActivarDefensa()
     {
         estaDefendiendo = true;

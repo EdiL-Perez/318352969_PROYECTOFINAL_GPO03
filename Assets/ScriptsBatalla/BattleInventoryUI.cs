@@ -119,6 +119,11 @@ public class BattleInventoryUI : MonoBehaviour
                 DataManager.Instance.jugadorHPActual = DataManager.Instance.jugadorMaxHP;
             }
 
+            if (battleManager.playerStats != null)
+            {
+                battleManager.playerStats.SincronizarHP(); 
+            }
+
             if (battleManager != null)
             {
                 battleManager.PlayHealingEffect();
