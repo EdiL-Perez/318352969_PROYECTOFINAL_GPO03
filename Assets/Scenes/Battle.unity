@@ -7370,11 +7370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomStartDistance: -6
-  zoomEndDistance: 8
+  zoomEndDistance: 7
   zoomDuration: 2
   zigzagAmplitude: 0.02
   zigzagFrequency: 20
-  rotationDuration: 0.5
+  rotationDuration: 0.35
   finalTransitionDuration: 1.5
   finalRotationAngleX: 15
   finalRotationAngleY: -45
