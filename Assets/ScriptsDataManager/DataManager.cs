@@ -28,7 +28,7 @@ public class DataManager : MonoBehaviour
 
 
 
-    // --- 2. DATOS TEMPORALES DEL ENEMIGO ---
+    // DATOS TEMPORALES DEL ENEMIGO 
     [Header("Datos del Enemigo en Combate")]
     // HP del enemigo que se encontró (para inicializar el combate)
     public int enemigoHPInicial;
@@ -43,7 +43,13 @@ public class DataManager : MonoBehaviour
     [Header("Estado del Juego")]
     // Podrías guardar la posición en el Overworld para regresar
     public Vector3 posicionRegresoOverworld;
-    //public string escenaOverworld = "OverWorld"; // Nombre de tu escena Overworld
+    //public string escenaOverworld = "OverWorld";
+
+
+    //DATOS BASE PARA REINICIAR
+    private const int BASE_ATAQUE_INICIAL = 15;
+    private const int MAX_HP_INICIAL = 100;
+    private const string ARMA_INICIAL_ID = "EspadaBasica";
 
     void Awake()
     {
@@ -126,9 +132,27 @@ public class DataManager : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Llamada desde el script de la escena de combate para volver al Overworld.
-    /// </summary>
+    public void ResetGameData()
+    {
+        Debug.Log("Reiniciando todos los datos del juego (Cuando hay Game Over).");
+
+        // 1. Datos del Jugador
+        jugadorHPActual = MAX_HP_INICIAL;
+        jugadorMaxHP = MAX_HP_INICIAL;
+        jugadorAtaque = BASE_ATAQUE_INICIAL;
+
+        // 2. Inventario y Equipamiento
+        armaActualID = ARMA_INICIAL_ID;
+        objetosCurativosIDs.Clear(); // Limpia la lista de pociones
+
+        // 3. Persistencia de Escena (Objetos Destruidos)
+        objetosDestruidos.Clear(); // Hace que todos los obstáculos y enemigos reaparezcan
+    
+        // 4. Posición
+        posicionRegresoOverworld = Vector3.zero; // Reinicia la posición de retorno
+    }
+
+
     public void RegresarAlOverworld()
     {
         // Asegúrate de guardar el estado actual del jugador antes de volver

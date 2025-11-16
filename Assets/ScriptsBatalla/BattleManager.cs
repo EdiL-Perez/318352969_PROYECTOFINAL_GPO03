@@ -237,7 +237,8 @@ public class BattleManager : MonoBehaviour
             EstadoActual = BattleState.LOST;
             Debug.Log("Derrota. Game Over...");
             playerStats.ActivarAnimacionMuerte();
-            yield return new WaitForSeconds(1.5f); 
+            yield return new WaitForSeconds(1.5f);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver"); 
             yield break; // Detiene la corutina
         }
 

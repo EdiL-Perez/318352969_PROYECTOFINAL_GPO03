@@ -1287,7 +1287,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 30
-  damageBase: 15
+  damageBase: 25
   IDunico: Enemigo6
 --- !u!1 &55738777 stripped
 GameObject:
@@ -87347,7 +87347,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 30
-  damageBase: 15
+  damageBase: 25
   IDunico: Enemigo5
 --- !u!1 &1517120336 stripped
 GameObject:
@@ -102953,7 +102953,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 30
-  damageBase: 15
+  damageBase: 25
   IDunico: Enemigo4
 --- !u!1 &1815637772 stripped
 GameObject:

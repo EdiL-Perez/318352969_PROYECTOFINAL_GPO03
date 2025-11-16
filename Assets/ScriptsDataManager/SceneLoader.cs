@@ -18,10 +18,18 @@ public class SceneLoader : MonoBehaviour
         
         SceneManager.LoadScene(targetSceneName);
     }
-    
-    /// <summary>
-    /// Función para salir del juego (solo funciona en compilaciones).
-    /// </summary>
+
+    public void GoToMainMenu()
+    {
+        if (DataManager.Instance != null)
+        {
+            DataManager.Instance.ResetGameData();
+        }
+        
+        // Cargar la escena de inicio (MainMenu)
+        SceneManager.LoadScene(targetSceneName);
+    }
+
     public void QuitGame()
     {
         Debug.Log("Saliendo del juego...");
