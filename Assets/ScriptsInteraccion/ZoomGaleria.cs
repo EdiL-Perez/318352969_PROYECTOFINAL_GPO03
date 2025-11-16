@@ -13,6 +13,7 @@ public class ZoomGaleria : MonoBehaviour
 
     private Vector3 originalScale;
     private Vector3 originalPosition; //  Guarda la posición original de la imagen
+    private int originalSiblingIndex;
     private bool isZoomed = false; 
     
     private RectTransform rectTransform; 
@@ -22,6 +23,7 @@ public class ZoomGaleria : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         originalScale = rectTransform.localScale;
         originalPosition = rectTransform.anchoredPosition; // Guardar la posición en el Canvas/Parent
+        originalSiblingIndex = transform.GetSiblingIndex();
     }
 
     /// <summary>
@@ -34,17 +36,17 @@ public class ZoomGaleria : MonoBehaviour
         if (isZoomed)
         {
             // Si está en zoom, vuelve al tamaño y posición originales
-            StartCoroutine(AnimateImage(originalScale, originalPosition));
+            StartCoroutine(AnimateImage(originalScale, originalPosition, originalSiblingIndex));
         }
         else
         {
             // Si no está en zoom, aplica el zoom y la posición central
-
-            // 🔥 POSICIÓN CENTRAL: El centro del padre (CenterParent) es (0, 0)
+            transform.SetAsLastSibling();
+            // El centro del padre (CenterParent) es (0, 0)
             Vector3 centerPosition = Vector3.zero; 
             
             Vector3 targetScale = originalScale * zoomScale;
-            StartCoroutine(AnimateImage(targetScale, centerPosition));
+            StartCoroutine(AnimateImage(targetScale, centerPosition, -1));
         }
         
         isZoomed = !isZoomed;
@@ -53,7 +55,7 @@ public class ZoomGaleria : MonoBehaviour
     /// <summary>
     /// Corutina para interpolar suavemente la escala y la posición.
     /// </summary>
-    IEnumerator AnimateImage(Vector3 targetScale, Vector3 targetPosition)
+    IEnumerator AnimateImage(Vector3 targetScale, Vector3 targetPosition, int targetSiblingIndex)
     {
         Vector3 startScale = rectTransform.localScale;
         Vector3 startPosition = rectTransform.anchoredPosition; // Usamos anchoredPosition para la UI
@@ -77,5 +79,12 @@ public class ZoomGaleria : MonoBehaviour
         // Asegura que termine exactamente en la escala y posición objetivo
         rectTransform.localScale = targetScale;
         rectTransform.anchoredPosition = targetPosition;
+
+        if (targetSiblingIndex != -1)
+        {
+            transform.SetSiblingIndex(targetSiblingIndex);
+        }
+
+
     }
 }
