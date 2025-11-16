@@ -28,6 +28,8 @@ public class BattleManager : MonoBehaviour
     public GameObject playerAttackEffectPrefab;
     public GameObject healingEffectPrefab;
 
+
+    public AudioSource battleMusicSource;
     public HUDBattle hudManager;
 
     public void InstanciarParticipantes()
@@ -104,9 +106,21 @@ public class BattleManager : MonoBehaviour
     }
 
 
+    public void StopMusic()
+    {
+        if (battleMusicSource != null && battleMusicSource.isPlaying)
+        {
+            // Opcional: usar un FadeOut para que no se corte abruptamente
+            battleMusicSource.Stop();
+        }
+    }
+
+
 
     public void IniciarBatalla()
     {
+
+      
         if (EstadoActual == BattleState.START){
         EstadoActual = BattleState.START;
         StartCoroutine(InicioBatalla());
@@ -229,6 +243,7 @@ public class BattleManager : MonoBehaviour
             Debug.Log("¡Victoria! Lógica de fin de batalla...");
             EnemyStats.ActivarAnimacionMuerte();
             yield return new WaitForSeconds(1.5f); 
+            StopMusic();
             DataManager.Instance.RegresarAlOverworld();
             yield break; // Detiene la corutina
         }
@@ -238,6 +253,7 @@ public class BattleManager : MonoBehaviour
             Debug.Log("Derrota. Game Over...");
             playerStats.ActivarAnimacionMuerte();
             yield return new WaitForSeconds(1.5f);
+            StopMusic();
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver"); 
             yield break; // Detiene la corutina
         }
