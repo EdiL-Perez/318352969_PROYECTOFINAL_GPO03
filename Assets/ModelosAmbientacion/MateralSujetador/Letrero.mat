@@ -116,12 +116,14 @@ Material:
     - Vector1_B2CC132F: 16
     - Vector1_B9994903: 11
     - Vector1_E8746023: 16
+    - _Ampltude: 0.13
     - _BumpScale: 1
     - _CustomDepthOffset: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FlatShading: 0
+    - _Frequency: 0.13
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -134,6 +136,7 @@ Material:
     - _QueueOffset: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 0.43
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
