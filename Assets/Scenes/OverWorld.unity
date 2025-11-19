@@ -1408,8 +1408,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
-  damageBase: 25
+  HpBase: 50
+  damageBase: 10
   IDunico: Enemigo6
 --- !u!1 &55738777 stripped
 GameObject:
@@ -18145,8 +18145,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
-  damageBase: 15
+  HpBase: 45
+  damageBase: 10
   IDunico: Enemigo3
 --- !u!1 &509468692 stripped
 GameObject:
@@ -68588,7 +68588,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 100
-  damageBase: 30
+  damageBase: 25
   IDunico: Enemigo7
 --- !u!1 &1227988159
 GameObject:
@@ -69110,7 +69110,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
+  HpBase: 15
   damageBase: 15
   IDunico: Enemigo2
 --- !u!1 &1250724239
@@ -87654,8 +87654,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
-  damageBase: 25
+  HpBase: 40
+  damageBase: 10
   IDunico: Enemigo5
 --- !u!1 &1517120336 stripped
 GameObject:
@@ -87727,7 +87727,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 30
-  damageBase: 15
+  damageBase: 10
   IDunico: Enemigo1
 --- !u!195 &1523835732
 NavMeshAgent:
