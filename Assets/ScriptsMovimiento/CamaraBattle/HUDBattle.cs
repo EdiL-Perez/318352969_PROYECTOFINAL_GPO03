@@ -16,7 +16,7 @@ public class HUDBattle : MonoBehaviour
     public TextMeshProUGUI playerAttackText;
 
 
-    [Header("Conexión con Inventario")]
+    [Header("Conexion con Inventario")]
     public BattleInventoryUI battleInventoryUI;
 
     public Button BotonItems;
@@ -77,7 +77,7 @@ public class HUDBattle : MonoBehaviour
     public void PresionarBotonAtacar(){
         if (BattleManager != null)
         {
-            // Esta función está en BattleManager y continúa el flujo de turnos
+            
             BattleManager.Ataquejugador(); 
         }
     }
@@ -86,7 +86,7 @@ public class HUDBattle : MonoBehaviour
     {
         if (BattleManager != null)
         {
-        // 2. Notificamos al BattleManager para que ejecute la defensa
+        // Notificamos al BattleManager para que ejecute la defensa
             BattleManager.Defenderjugador(); 
         }
     }
@@ -96,30 +96,30 @@ public class HUDBattle : MonoBehaviour
     {
         if (battleInventoryUI != null)
         {
-            // 1. Ocultamos el HUD principal (Botones de Ataque, etc.)
+            // Ocultamos el HUD principal 
             ocultaropciones();
 
-            // 2. Mostramos el panel de slots de inventario
+            // Mostramos el panel de slots de inventario
             battleInventoryUI.ShowInventoryPanel();
         }
     }
 
     public void UpdatePlayerStatsUI()
     {
-        // El DataManager debe ser un Singleton y ya debe existir
+        
         if (DataManager.Instance == null) return;
         
         int currentHP = DataManager.Instance.jugadorHPActual;
         int maxHP = DataManager.Instance.jugadorMaxHP;
         int attack = DataManager.Instance.jugadorAtaque;
 
-        // . ACTUALIZAR TEXTO DE VIDA (NUMÉRICO)
+        // ACTUALIZAR TEXTO DE VIDA
         if (playerHPText != null)
         {
             playerHPText.text = $"HP: {currentHP} / {maxHP}";
         }
 
-        // . ACTUALIZAR TEXTO DE ATAQUE
+        //ACTUALIZAR TEXTO DE ATAQUE
         if (playerAttackText != null)
         {
             playerAttackText.text = $"ATAQUE: {attack.ToString()}";

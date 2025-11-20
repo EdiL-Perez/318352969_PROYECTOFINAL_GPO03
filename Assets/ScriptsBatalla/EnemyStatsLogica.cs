@@ -57,12 +57,12 @@ public class EnemyStatsLogica : MonoBehaviour
 
     public void ActivarAnimacionMuerte()
     {
-    // Solo si la vida realmente llegó a cero (o menos)
+    // Solo si la vida realmente llegó a cero
         if (VidaActualHP <= 0)
         {
             if (anim != null)
             {
-            // Detenemos cualquier otra animación y activamos el estado final.
+
                 anim.SetBool("Muerte", true); 
             }
         }
@@ -72,7 +72,7 @@ public class EnemyStatsLogica : MonoBehaviour
     public void UpdateEnemyStatsUI()
     {
 
-        // 2. ACTUALIZAR TEXTO DE VIDA (NUMÉRICO)
+        //ACTUALIZAR TEXTO DE VIDA
         if (enemyHPText != null)
         {
             enemyHPText.text = $"HP: {VidaActualHP} / {VidaMaxHP}";

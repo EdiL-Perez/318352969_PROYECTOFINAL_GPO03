@@ -1287,7 +1287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.46
+      value: 36.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5288,7 +5288,7 @@ Transform:
   m_GameObject: {fileID: 303330350}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.46, y: 0.5, z: -9.33}
+  m_LocalPosition: {x: 36.42, y: 0.5, z: -9.33}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18145,7 +18145,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 45
+  HpBase: 60
   damageBase: 10
   IDunico: Enemigo3
 --- !u!1 &509468692 stripped
@@ -68466,7 +68466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.82
+      value: 47.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalPosition.y
@@ -68474,11 +68474,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.36
+      value: -13.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalRotation.x
@@ -68486,7 +68486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalRotation.z
@@ -68498,7 +68498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -68527,6 +68527,22 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7072302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7069834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
       objectReference: {fileID: 0}
     - target: {fileID: 8743813690021804245, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
       propertyPath: m_CastShadows
@@ -68588,7 +68604,7 @@ MonoBehaviour:
     m_Bits: 64
   Escena: Battle
   HpBase: 100
-  damageBase: 25
+  damageBase: 15
   IDunico: Enemigo7
 --- !u!1 &1227988159
 GameObject:
@@ -69110,7 +69126,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 15
+  HpBase: 30
   damageBase: 15
   IDunico: Enemigo2
 --- !u!1 &1250724239
@@ -87654,7 +87670,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 40
+  HpBase: 50
   damageBase: 10
   IDunico: Enemigo5
 --- !u!1 &1517120336 stripped
@@ -87704,6 +87720,131 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!1001 &1520542219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.63
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_Name
+      value: Carro (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520542222}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520542221}
+  m_SourcePrefab: {fileID: 100100000, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+--- !u!1 &1520542220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9de6773e1576da4095fff2cbf6b95e7, type: 3}
+  m_PrefabInstance: {fileID: 1520542219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520542221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520542220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!65 &1520542222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520542220}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05578755, y: 0.044785887, z: 0.030983172}
+  m_Center: {x: 0.00081051077, y: 0.022692364, z: 0.00000014475414}
 --- !u!1 &1523835728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba2485ec7102b484b9133d71ec848228, type: 3}
@@ -87726,7 +87867,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
+  HpBase: 50
   damageBase: 10
   IDunico: Enemigo1
 --- !u!195 &1523835732
@@ -90069,7 +90210,7 @@ Transform:
   m_GameObject: {fileID: 1670457333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 47.82, y: 0.5, z: -10.36}
+  m_LocalPosition: {x: 47.13, y: 0.5, z: -13.97}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103260,7 +103401,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Escena: Battle
-  HpBase: 30
+  HpBase: 25
   damageBase: 25
   IDunico: Enemigo4
 --- !u!1 &1815637772 stripped
@@ -122655,6 +122796,7 @@ SceneRoots:
   - {fileID: 671274835}
   - {fileID: 1222483893}
   - {fileID: 967673409}
+  - {fileID: 1520542219}
   - {fileID: 788555896}
   - {fileID: 529524227}
   - {fileID: 1122620513}

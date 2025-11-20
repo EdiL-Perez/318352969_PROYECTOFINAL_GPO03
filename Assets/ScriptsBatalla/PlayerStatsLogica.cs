@@ -75,7 +75,7 @@ public class PlayerStatsLogica : MonoBehaviour
     public void ActivarDefensa()
     {
         estaDefendiendo = true;
-    // Opcional: Animación o efecto visual de defensa
+    
         Debug.Log("Defensa Activada.");
     }
 
@@ -94,12 +94,12 @@ public class PlayerStatsLogica : MonoBehaviour
 
     public void ActivarAnimacionMuerte()
     {
-    // Solo si la vida realmente llegó a cero (o menos)
+    // Solo si la vida realmente llegó a cero
         if (VidaActualHP <= 0)
         {
             if (anim != null)
             {
-            // Detenemos cualquier otra animación y activamos el estado final.
+        
                 anim.SetBool("Muerte", true); 
             }
         }

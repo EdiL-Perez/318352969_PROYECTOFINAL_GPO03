@@ -14,7 +14,7 @@ public class BattleManager : MonoBehaviour
 
     public GameObject Jugadorprefab; // Prefab del Jugador de Combate
     public GameObject Enemigoprefab;  // Prefab del Enemigo de Combate
-    public Transform PlayerSpawn; // Punto donde aparece el jugador
+    public Transform PlayerSpawn; // Punto donde aparecen
     public Transform EnemySpawn;
 
     private GameObject jugadorinstanciado;
@@ -34,14 +34,14 @@ public class BattleManager : MonoBehaviour
 
     public void InstanciarParticipantes()
     {
-        // 1. Instanciar Jugador
+        // Instanciar Jugador
         jugadorinstanciado = Instantiate(Jugadorprefab, PlayerSpawn.position, PlayerSpawn.rotation);
-        // 2. Instanciar Enemigo
+        //Instanciar Enemigo
         enemigoinstanciado = Instantiate(Enemigoprefab, EnemySpawn.position, EnemySpawn.rotation);
 
-        // 3. Asignar las estadísticas al BattleManager (¡Crucial!)
-        // Los scripts CombatPlayerStats y CombatEnemyStats se ejecutan en Start/Awake del objeto instanciado.
-        // Solo necesitamos que el BattleManager tenga la referencia:
+        //Asignar las estads al BattleManager
+        // Los scripts CombatPlayerStats y CombatEnemyStats se ejecutan
+        // Solo necesitamos que el BattleManager tenga la referencia
         playerStats = jugadorinstanciado.GetComponent<PlayerStatsLogica>();
         if (playerStats != null)
         {   
@@ -59,7 +59,6 @@ public class BattleManager : MonoBehaviour
         }
         
         //Debug.Log("Participantes instanciados y referencias actualizadas.");
-        // El resto de la lógica de carga de stats se maneja en el Start/Awake de los prefabs.
     }
 
     public void PlayHealingEffect()
@@ -70,14 +69,14 @@ public class BattleManager : MonoBehaviour
         return;
     }
     
-     //Calcula una posición ligeramente por encima del jugador
+     //
     //Vector3 effectPosition = jugadorinstanciado.transform.position + Vector3.up * 1f;
 
     // Instanciar el prefab del efecto
     GameObject effectInstance = Instantiate(healingEffectPrefab, PlayerSpawn.position, Quaternion.identity);
     
-    // **¡CRUCIAL!** Asegúrate de que el ParticleSystem se autodestruya al terminar.
-    // Esto lo hace el script 'AutoDestroyScript' (ver paso 3).
+    
+    
     }
 
     public void PlayPlayerAttackEffect()
@@ -89,20 +88,20 @@ public class BattleManager : MonoBehaviour
         }
     
         // Calcula una posición ligeramente por encima del enemigo para el impacto
-        Vector3 effectPositionBase = enemigoinstanciado.transform.position + Vector3.up * 1f; // Ajusta la altura si es necesario
+        Vector3 effectPositionBase = enemigoinstanciado.transform.position + Vector3.up * 1f; //
 
         Vector3 direccionHaciaJugador = (jugadorinstanciado.transform.position - enemigoinstanciado.transform.position).normalized;
     
-        // Definimos qué tanto queremos desplazar el efecto (ej: 0.5 unidades)
+        
         float desplazamientoAdelante = 0.5f; 
     
-        // La posición final es la base más el desplazamiento
+        // La posición final
         Vector3 posicionFinal = effectPositionBase + direccionHaciaJugador * desplazamientoAdelante;
 
         // Instanciar el prefab del efecto
         GameObject effectInstance = Instantiate(playerAttackEffectPrefab, posicionFinal, Quaternion.identity);
     
-    // El 'AutoDestroyScript' adjunto al prefab se encargará de destruirlo.
+    
     }
 
 
@@ -110,7 +109,7 @@ public class BattleManager : MonoBehaviour
     {
         if (battleMusicSource != null && battleMusicSource.isPlaying)
         {
-            // Opcional: usar un FadeOut para que no se corte abruptamente
+            
             battleMusicSource.Stop();
         }
     }
@@ -142,7 +141,7 @@ public class BattleManager : MonoBehaviour
         }
         Debug.Log("Turno del Jugador. Mostrando opciones del HUD.");
         
-        // Muestra las opciones de Ataquee tc.
+        // Muestra las opciones de Ataquee 
         if (hudManager != null)
         {
             hudManager.mostraropciones(); // 
@@ -157,30 +156,30 @@ public class BattleManager : MonoBehaviour
         Debug.Log("INCIANDO LA SECUENCIA DE BATALLA");
         
         // 
-        // Espera un momento después de la transición de cámara y aparición del HUD (opcional)
-        yield return new WaitForSeconds(1f); 
-        // Decidir quién va primero (por simplicidad, siempre el jugador)
+        // Espera un momento despues de la transición de camara
+        yield return new WaitForSeconds(1.5f); 
+        // 
         EstadoActual = BattleState.PLAYER_TURN;
         PlayerTurn();
     }
 
     public void Ataquejugador()
     {
-        // 1. Ocultar las opciones del HUD
+        // Ocultar las opciones del HUD
         if (hudManager != null)
         {
             hudManager.ocultaropciones();
         }
         
-        // 2. Ejecutar la acción
+        // Ejecutar la acción
         Debug.Log("Jugador ataca");
         playerStats.AnimarAtaque();
         PlayPlayerAttackEffect();
         
-        // Aplicar daño (Asume que el daño es fijo por simplicidad)
+        // Aplicar daño
         EnemyStats.DañoRecibido(playerStats.Ataque);
 
-        // 3. Revisar el estado y pasar al siguiente turno
+        //Revisar el estado y pasar al siguiente turno
         EndPlayerAction();
     }
 
@@ -195,25 +194,25 @@ public class BattleManager : MonoBehaviour
         
         if (hudManager != null)
         {
-        // La función ocultaropciones() deshabilita todos los botones (Ataque, Defensa, Items).
+        //deshabilita todos los botones 
             hudManager.ocultaropciones(); 
         }
-        // 1. El jugador activa el estado de defensa
+        //El jugador activa el estado de defensa
         playerStats.ActivarDefensa();
 
-    // 2. Pasa el turno
+    // Pasa el turno
         EndPlayerAction(); 
     }
 
     public void EndPlayerAction()
     {
-        // Ocultar cualquier panel de sub-opciones (Inventario) si está visible
+        // Ocultar cualquier panel de opciones (Inventario) 
         if (battleInventoryUI != null)
         {
             battleInventoryUI.HideInventoryPanel(); 
         }
 
-        // Inicia el proceso de finalización del turno (chequeo de estado y transición)
+        //finalización del turno
         StartCoroutine(FinalTurno());
     }
     IEnumerator AtaqueEnemigo()
@@ -221,10 +220,10 @@ public class BattleManager : MonoBehaviour
         EstadoActual = BattleState.ENEMY_TURN;
         Debug.Log("Turno del Enemigo");
 
-        // Espera un momento para que el jugador vea que el turno cambió
+        //espera un momento para que el jugador vea que el turno cambio
         yield return new WaitForSeconds(1.5f); 
         
-        // Simular el ataque del enemigo
+        //
         Debug.Log("Enemigo ataca!");
         EnemyStats.AnimarAtaque();
         playerStats.DañoRecibido(EnemyStats.Ataque);
@@ -236,7 +235,7 @@ public class BattleManager : MonoBehaviour
         // Esperar un momento para que las animaciones de daño terminen
         yield return new WaitForSeconds(1.0f); 
 
-        // 1. Chequeo de Victoria/Derrota
+        //Chequeo de Victoria/Derrota
         if (EnemyStats.VidaActualHP <= 0)
         {
             EstadoActual = BattleState.WON;
@@ -258,10 +257,10 @@ public class BattleManager : MonoBehaviour
             yield break; // Detiene la corutina
         }
 
-        // 2. Si nadie muere, pasar al siguiente turno
+        //Si nadie muere pasar al siguiente turno
         if (EstadoActual == BattleState.PLAYER_TURN)
         {
-            StartCoroutine(AtaqueEnemigo()); // Si era el turno del jugador, pasa al enemigo
+            StartCoroutine(AtaqueEnemigo()); // Si era el turno del jugador pasa al enemigo
         }
         else // Era el turno del enemigo
         {
