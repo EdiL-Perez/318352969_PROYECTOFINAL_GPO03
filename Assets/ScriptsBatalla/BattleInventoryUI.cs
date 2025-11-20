@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class BattleInventoryUI : MonoBehaviour
 {
-    // Referencias para la integración con el sistema de turnos
+    // Referencias con el sistema de turnos
     [Header("Integración de Combate")]
     public BattleManager battleManager; 
     public GameObject inventoryPanel;
@@ -15,11 +15,11 @@ public class BattleInventoryUI : MonoBehaviour
 
     public Button BotonRegresar;
     
-    // ... (Constantes y referencias) ...
+    // 
     private const int CURACION_BASE = 30; 
     private const string ID_POCION = "Pocion"; 
     
-    // Referencias visuales (Necesitas un script de mapeo o definir los Sprites aquí)
+    //Referencias visuales 
     public Sprite iconoPocion;
     public Sprite iconoSlotVacio;
 
@@ -28,11 +28,11 @@ public class BattleInventoryUI : MonoBehaviour
     {
         // Al iniciar la batalla, el inventario debe estar oculto
         HideInventoryPanel(); 
-        // Refrescar para configurar los listeners
+        
         RefreshInventoryDisplay();
     }
     
-    // --- MANEJO DEL PANEL ---
+    
     public void ShowInventoryPanel()
     {
         if (inventoryPanel != null)
@@ -53,22 +53,22 @@ public class BattleInventoryUI : MonoBehaviour
 
     public void ExitInventory()
     {
-        // 1. Ocultar el panel de inventario inmediatamente
+        //Ocultar el panel de inventario inmediatamente
         HideInventoryPanel();
 
-        // 2. Reactivar las opciones principales (Ataque, Items, Defensa) del HUD.
+        // 2. Reactivar las opciones principales
         if (battleManager != null && battleManager.hudManager != null)
         {
-            // El HUDManager debe tener una función para reactivar los botones principales.
+            //reactivar los botones principales.
             battleManager.hudManager.mostraropciones(); 
         }
 
         Debug.Log("Saliendo del inventario. Opciones de turno reactivadas.");
         
-        // El estado del turno (PLAYER_TURN) no se toca, solo se cambia la interfaz.
+        //
     }
 
-    // --- LÓGICA DE INVENTARIO ---
+    // LOGICA DE INVENTARIO
 
     public void RefreshInventoryDisplay()
     {
@@ -82,14 +82,14 @@ public class BattleInventoryUI : MonoBehaviour
             
             if (i < curativos.Count)
             {
-                // Hay un item (asumimos que siempre es Poción)
-                // Aquí podrías usar una función de mapeo (GetIconById) si tuvieras más items.
+                // Hay un item 
+                //
                 itemImage.sprite = iconoPocion; 
                 itemImage.color = Color.white; 
 
                 slotButton.interactable = true;
                 
-                // Asignar el Listener (limpiar primero para evitar duplicados)
+                // A
                 slotButton.onClick.RemoveAllListeners();
                 int index = i; 
                 slotButton.onClick.AddListener(() => UseCurativeItem(index));
@@ -112,7 +112,7 @@ public class BattleInventoryUI : MonoBehaviour
         
         if (slotIndex < curativos.Count && curativos[slotIndex] == ID_POCION)
         {
-            // 1. Aplicar curación al jugador
+            //Aplicar curación al jugador
             DataManager.Instance.jugadorHPActual += CURACION_BASE;
             if (DataManager.Instance.jugadorHPActual > DataManager.Instance.jugadorMaxHP)
             {
@@ -128,25 +128,25 @@ public class BattleInventoryUI : MonoBehaviour
             {
                 battleManager.PlayHealingEffect();
             }
-            // 2. Quitar el item de la lista (DataManager)
+            // Quitar el item de la lista
             curativos.RemoveAt(slotIndex);
 
-            // 3. Actualizar la interfaz (HP del HUD y Slots)
+            // Actualizar la interfaz (HP del HUD y Slots)
 
             if (battleManager != null && battleManager.hudManager != null)
             {
-                battleManager.hudManager.UpdatePlayerStatsUI(); // Actualiza la barra de vida
+                battleManager.hudManager.UpdatePlayerStatsUI(); // barra de vida
              }
-            //battleManager.hudManager.UpdatePlayerStatsUI(); // Necesitas esta función en HUDBattle
-            // Nota: Ya se oculta y refresca con la llamada a EndPlayerAction
+            //battleManager.hudManager.UpdatePlayerStatsUI(); //
+            
 
-            // 4. Mostrar mensaje y pasar el turno
+            // Mostrar mensaje y pasar el turno
             if (feedbackText != null)
             {
                 feedbackText.text = $"¡Usaste una {ID_POCION}! +{CURACION_BASE} HP.";
             }
 
-            //  LLAMADA CLAVE: Pide al BattleManager que finalice la acción
+            // 
             battleManager.EndPlayerAction(); 
         }
     }

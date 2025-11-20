@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
             DataManager.Instance.ResetGameData();
         }
         
-        // Cargar la escena de inicio (MainMenu)
+        // Cargar la escena de inicio
         SceneManager.LoadScene(targetSceneName);
     }
 
@@ -35,7 +35,7 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("Saliendo del juego...");
         Application.Quit();
         
-        // Código para detener el editor (solo para pruebas)
+        // Código para detener el editor
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif

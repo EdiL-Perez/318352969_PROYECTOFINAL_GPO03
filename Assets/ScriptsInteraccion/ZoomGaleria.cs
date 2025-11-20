@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ZoomGaleria : MonoBehaviour
 {
-    //  Escala final a la que se agrandará la imagen
+    //  Escala final
     [Header("Configuración de Zoom y Movimiento")]
     public float zoomScale = 1.5f; 
     public float zoomDuration = 0.3f; 
@@ -26,21 +26,19 @@ public class ZoomGaleria : MonoBehaviour
         originalSiblingIndex = transform.GetSiblingIndex();
     }
 
-    /// <summary>
-    /// Función pública llamada por el evento OnClick del botón.
-    /// </summary>
+    
     public void ToggleZoom()
     {
         StopAllCoroutines(); 
 
         if (isZoomed)
         {
-            // Si está en zoom, vuelve al tamaño y posición originales
+            //vuelve al tamaño y posición originales
             StartCoroutine(AnimateImage(originalScale, originalPosition, originalSiblingIndex));
         }
         else
         {
-            // Si no está en zoom, aplica el zoom y la posición central
+            // Si no está en zoom aplica el zoom y la posición central
             transform.SetAsLastSibling();
             // El centro del padre (CenterParent) es (0, 0)
             Vector3 centerPosition = Vector3.zero; 
@@ -52,23 +50,19 @@ public class ZoomGaleria : MonoBehaviour
         isZoomed = !isZoomed;
     }
 
-    /// <summary>
-    /// Corutina para interpolar suavemente la escala y la posición.
-    /// </summary>
     IEnumerator AnimateImage(Vector3 targetScale, Vector3 targetPosition, int targetSiblingIndex)
     {
         Vector3 startScale = rectTransform.localScale;
-        Vector3 startPosition = rectTransform.anchoredPosition; // Usamos anchoredPosition para la UI
+        Vector3 startPosition = rectTransform.anchoredPosition; 
         float timeElapsed = 0f;
 
-        //  Opcional: Cambiar el padre para que el centrado sea relativo al centro de la pantalla
-        // Aunque usar Vector3.zero como targetPosition funciona si el anclaje es correcto.
+      
 
         while (timeElapsed < zoomDuration)
         {
             float t = timeElapsed / zoomDuration;
             
-            // Interpolación Suave (Lerp)
+            
             rectTransform.localScale = Vector3.Lerp(startScale, targetScale, t);
             rectTransform.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, t); //  Interpolar Posición
             
@@ -76,7 +70,7 @@ public class ZoomGaleria : MonoBehaviour
             yield return null; 
         }
 
-        // Asegura que termine exactamente en la escala y posición objetivo
+        //termine exactamente en la escala 
         rectTransform.localScale = targetScale;
         rectTransform.anchoredPosition = targetPosition;
 

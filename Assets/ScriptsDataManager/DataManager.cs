@@ -7,13 +7,13 @@ public class DataManager : MonoBehaviour
     
     public static DataManager Instance;
 
-    // --- 1. DATOS PERSISTENTES DEL JUGADOR ---
+    //  DATOS PERSISTENTES DEL JUGADOR 
     [Header("Datos del Jugador")]
     // HP actual que lleva el jugador de regreso al Overworld
     public int jugadorHPActual;
-    // HP máximo (puede ser usado por la UI)
+    // HP máximo 
     public int jugadorMaxHP;
-    // Ataque base (asumimos que no cambia en el Overworld)
+    //Ataque base 
     public int jugadorAtaque;
 
 
@@ -21,27 +21,27 @@ public class DataManager : MonoBehaviour
 
     [Header("Inventario del Jugador")]
     [Header("Inventario y Estado")]
-    // ID del arma actual (ej: "EspadaBasica", "VaritaMagica")
+    // ID del arma actual "EspadaBasica", "VaritaMagica")
     public string armaActualID; 
-    // Lista de ID's de los objetos curativos (máximo 4 slots)
+    // Lista de IDs de los objetos curativos ( 4 slots)
     public List<string> objetosCurativosIDs = new List<string>();
 
 
 
     // DATOS TEMPORALES DEL ENEMIGO 
     [Header("Datos del Enemigo en Combate")]
-    // HP del enemigo que se encontró (para inicializar el combate)
+    // HP del enemigo( inicializar el combate)
     public int enemigoHPInicial;
-    // Ataque del enemigo que se encontró
+    // Ataque del enemigo
     public int enemigoAtaque;
 
     [Header("Persistencia de Escena")]
     // Lista de identificadores de objetos que deben estar inactivos/destruidos.
     public List<string> objetosDestruidos = new List<string>();
     
-    // --- 3. BANDERA DE ESTADO (Opcional, pero útil) ---
+    // BANDERA DE ESTADO
     [Header("Estado del Juego")]
-    // Podrías guardar la posición en el Overworld para regresar
+    
     public Vector3 posicionRegresoOverworld;
     //public string escenaOverworld = "OverWorld";
 
@@ -61,7 +61,7 @@ public class DataManager : MonoBehaviour
         }
         else
         {
-            // Si ya existe una instancia (porque volvemos a cargar la escena inicial), la destruye.
+            // Si ya existe una instancia (porque volvemos a cargar la escena inicial) la destruye.
             Destroy(gameObject);
         }
     }
@@ -81,15 +81,15 @@ public class DataManager : MonoBehaviour
     {
         int bonoDeArma = 0;
     
-        // LÓGICA DE BONIFICACIÓN POR ARMA
+        // BONIFICACIÓN POR ARMA
         if (nuevaArmaID == "EspadaBasica")
         {
-        // La espada inicial no da bono, o su bono es 0.
+        // La espada inicial no da bono
             bonoDeArma = 0; 
         }
         else if (nuevaArmaID == "VaritaMagica") 
         {
-        // La varita mágica da un bono de +10 al ataque base
+        //La varita magica da un bono de +10 
         bonoDeArma = 10;
         }
 
@@ -99,32 +99,27 @@ public class DataManager : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Llamada desde el script del enemigo al iniciar el contacto.
-    /// Guarda los datos del enemigo encontrado y carga la escena de combate.
-    /// </summary>
-    /// <param name="HpBase">Vida base del enemigo</param>
-    /// <param name="damageBase">Ataque base del enemigo</param>
+
     public void PrepararCombate(int hpEnemigo, int ataqueEnemigo)
     {
         // Guardar la posición actual del jugador para regresar después
-        // (Asume que tu jugador se llama "Player" o tiene un tag para encontrarlo)
+        
         GameObject jugadorOverworld = GameObject.FindGameObjectWithTag("Player"); 
         if (jugadorOverworld != null)
         {
             posicionRegresoOverworld = jugadorOverworld.transform.position;
         }
 
-        // 1. Guardar los datos del enemigo que vamos a enfrentar
+        //Guardar los datos del enemigo 
         this.enemigoHPInicial = hpEnemigo;
         this.enemigoAtaque = ataqueEnemigo;
         
-        // 2. Cargar la escena de combate
+        //Cargar la escena de combate
         SceneManager.LoadScene("Battle"); 
     }
     public void RegistrarDestruccion(string objectID)
     {
-    // Solo añade el ID si aún no está en la lista (para evitar duplicados)
+    // Solo añade el ID si aún no está en la lista ( evitar duplicados)
         if (!objetosDestruidos.Contains(objectID))
         {
         objetosDestruidos.Add(objectID);
@@ -136,27 +131,27 @@ public class DataManager : MonoBehaviour
     {
         Debug.Log("Reiniciando todos los datos del juego (Cuando hay Game Over).");
 
-        // 1. Datos del Jugador
+        //Datos del Jugador
         jugadorHPActual = MAX_HP_INICIAL;
         jugadorMaxHP = MAX_HP_INICIAL;
         jugadorAtaque = BASE_ATAQUE_INICIAL;
 
-        // 2. Inventario y Equipamiento
+        // Inventario y Equipamiento
         armaActualID = ARMA_INICIAL_ID;
         objetosCurativosIDs.Clear(); // Limpia la lista de pociones
 
-        // 3. Persistencia de Escena (Objetos Destruidos)
-        objetosDestruidos.Clear(); // Hace que todos los obstáculos y enemigos reaparezcan
+        //Persistencia de Escena (Objetos Destruidos)
+        objetosDestruidos.Clear(); // Hace qe enemigos reaparezcan
     
-        // 4. Posición
-        posicionRegresoOverworld = Vector3.zero; // Reinicia la posición de retorno
+        // Posición
+        posicionRegresoOverworld = Vector3.zero; // Reinicia la posicion de retorno
     }
 
 
     public void RegresarAlOverworld()
     {
-        // Asegúrate de guardar el estado actual del jugador antes de volver
-        // Por ejemplo, si el jugadorHPActual fue modificado en combate.
+        // 
+        //
         SceneManager.LoadScene("OverWorld");
     }
 }

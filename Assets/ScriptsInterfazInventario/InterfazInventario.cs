@@ -8,43 +8,42 @@ public class InterfazInventario : MonoBehaviour
     public Image armaSlotImage;             // Slot 1 Arma (Espada/Varita)
     public List<Image> curativoSlotImages;  //Slots 2 al 5 Items Curativos
 
-    // --- DEFINICIÓN DE IDS ---
-    // Usamos constantes para evitar errores tipográficos
+    //DEFINICIÓN DE IDS
+    //
     private const string ID_ESPADA_BASICA = "EspadaBasica";
     private const string ID_VARITA_MAGICA = "VaritaMagica";
     private const string ID_POCION = "Pocion";
 
     [Header("Assets (Iconos de Items)")]
-    // Sprites que asignarás en el Inspector. ¡MANTÉN ESTE ORDEN!
+    // Sprites MANTENER ORDEN
     public Sprite[] itemIconSprites; 
     public Sprite iconoSlotVacio;
 
 
-    /* ORDEN ESPERADO EN EL ARRAY itemIconSprites (Inspector):
+    /* ORDEN ESPERADO EN EL ARRAY 
      * 0: Sprite de Espada Basica
      * 1: Sprite de Varita Magica
      * 2: Sprite de Pocion
-     * (Asegúrate de que tus 3 Sprites estén en este orden)
      */
     
     void Start()
     {
-        // Inicializar el mapeo de iconos (debes crear esta lógica si es necesario)
-        // Por ahora, solo nos aseguraremos de que todo esté limpio.
+        // 
+        // 
         UpdateUI(); 
     }
 
-    // Esta función debe ser llamada cada vez que el inventario cambie (al recoger algo).
+    // Esta función debe ser llamada cada vez que el inventario cambie (al recoger algo)
     public void UpdateUI()
     {
         if (DataManager.Instance == null) return;
         
-        // --- 1. ACTUALIZAR SLOT DEL ARMA ---
+        // ACTUALIZAR SLOT DEL ARMA 
         string armaID = DataManager.Instance.armaActualID;
-        // Asignamos el sprite que la función de mapeo nos dé
+        //Asignamos el sprite que la función de mapeO
         armaSlotImage.sprite = GetIconById(armaID);
 
-        // 2. ACTUALIZAR SLOTS CURATIVOS (4 espacios)
+        //ACTUALIZAR SLOTS CURATIVOS (4 espacios)
         List<string> curativos = DataManager.Instance.objetosCurativosIDs;
     
         for (int i = 0; i < curativoSlotImages.Count; i++)
@@ -65,7 +64,7 @@ public class InterfazInventario : MonoBehaviour
         }
     }
     
-    // Función de ejemplo para obtener un icono
+    
     private Sprite GetIconById(string id)
     {
         if (id == ID_ESPADA_BASICA)
@@ -78,11 +77,11 @@ public class InterfazInventario : MonoBehaviour
         }
         else if (id == ID_POCION)
         {
-            // Solo tienes un item curativo, por lo que este sprite se repite
+            // sprite se repite
             if (itemIconSprites.Length > 2) return itemIconSprites[2]; 
         }
 
-        return iconoSlotVacio; // Devuelve el sprite vacío si no hay coincidencia (ej: ID incorrecto o "Ninguna")
+        return iconoSlotVacio; // Devuelve el sprite vacío si no hay coincidencia
 
     }
 }

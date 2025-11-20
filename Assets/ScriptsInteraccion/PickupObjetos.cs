@@ -4,7 +4,7 @@ public class PickupObjetos : MonoBehaviour
 {
     public enum ItemType { Weapon, Healing }
     public ItemType tipoObjeto;
-    public string itemID; // Ej: "Pocion", "EspadaLarga"
+    public string itemID; //  "Pocion"
     
     [Header("Referencias UI")]
     // Referencia al script que debe actualizarse
@@ -17,7 +17,7 @@ public class PickupObjetos : MonoBehaviour
 
     private void Start()
     {
-    // Buscar el script WeaponAttachment en el jugador al iniciar la escena
+    // Buscar el scriptt en el jugador al iniciar la escena
     GameObject playerObj = GameObject.FindGameObjectWithTag("Player"); 
         if (playerObj != null)
         {
@@ -29,7 +29,7 @@ public class PickupObjetos : MonoBehaviour
     private void Update()
     {
         // Rotar el objeto alrededor del eje Y (vertical)
-        // Time.deltaTime asegura que la rotación sea suave e independiente del framerate
+        //
         transform.Rotate(Vector3.up, velocidadRotacion * Time.deltaTime, Space.World);
     }
 
@@ -58,19 +58,19 @@ public class PickupObjetos : MonoBehaviour
             }
             else if (tipoObjeto == ItemType.Healing)
             {
-                // Lógica para añadir objeto curativo (verificar si hay espacio)
+                //Lógica para añadir objeto curativo 
                 pickedUp = DataManager.Instance.AddCurativo(itemID);
             }
 
             if (pickedUp)
             {
-                // 1. Notificar a la UI para que se actualice
+                //Notificar a la UI para que se actualice
                 if (inventoryUI != null)
                 {
                     inventoryUI.UpdateUI();
                 }
                 
-                // 2. Destruir el objeto del mundo
+                //Destruir el objeto del mundo
                 Destroy(gameObject);
             }
         }

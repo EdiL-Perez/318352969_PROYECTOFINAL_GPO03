@@ -10,7 +10,7 @@ public class arma : MonoBehaviour
 
     public string defaultWeaponID = "EspadaBasica";
 
-    // La variable que guardará el arma instanciada
+    // La variable que guardara el arma instanciada
     private GameObject currentWeapon; 
 
     // Referencia al punto de montaje que creaste en el hueso de la mano
@@ -25,7 +25,7 @@ public class arma : MonoBehaviour
         {
             string currentWeaponID = DataManager.Instance.armaActualID;
             
-            // Lógica para encontrar el Prefab (deberás tener esta función FindWeaponPrefab)
+            // Logica para encontrar el Prefab
             GameObject weaponPrefabToMount = FindWeaponPrefab(currentWeaponID); 
             
             if (weaponPrefabToMount != null && weaponMountPoint != null)
@@ -33,7 +33,7 @@ public class arma : MonoBehaviour
                 MountWeapon(weaponPrefabToMount);
             }
         }
-        // Si tienes un arma predefinida, móntala al iniciar
+        // 
         //if (weaponPrefab != null && weaponMountPoint != null)
         //{
             //MountWeapon(weaponPrefab);
@@ -46,7 +46,7 @@ public class arma : MonoBehaviour
     {
         if (DataManager.Instance == null) return;
 
-        // Solo inicializa el ID del arma si el DataManager aún no tiene uno (ej., está en "Ninguna" o vacío)
+        // Solo inicializa el ID del arma si el DataManager notiene
         if (string.IsNullOrEmpty(DataManager.Instance.armaActualID) || 
             DataManager.Instance.armaActualID == "Ninguna")
         {
@@ -72,10 +72,7 @@ public class arma : MonoBehaviour
         return null; 
     }
 
-    /// <summary>
-    /// Coloca un arma específica en el punto de montaje.
-    /// </summary>
-    /// <param name="newWeaponPrefab">El GameObject/Prefab de la nueva arma.</param>
+
     public void MountWeapon(GameObject newWeaponPrefab)
     {
         if (weaponMountPoint == null)
@@ -84,17 +81,17 @@ public class arma : MonoBehaviour
             return;
         }
 
-        // 1. Eliminar el arma anterior si existe
+        // Eliminar el arma anterior si existe
         if (currentWeapon != null)
         {
             Destroy(currentWeapon);
         }
 
-        // 2. Instanciar el nuevo Prefab del arma
+        // Instanciar el nuevo Prefab del arma
         currentWeapon = Instantiate(newWeaponPrefab, weaponMountPoint); 
         
-        // 3. Establecer la posición y rotación a cero LOCAL
-        // Esto hace que el arma se alinee perfectamente con el objeto 'WeaponMount'.
+        // 
+        
         currentWeapon.transform.localPosition = Vector3.zero;
         currentWeapon.transform.localRotation = Quaternion.identity; 
         
@@ -107,10 +104,10 @@ public class arma : MonoBehaviour
 
         string currentWeaponID = DataManager.Instance.armaActualID;
     
-        // 1. Encontrar el prefab que debe montar
+        //Encontrar el prefab que debe montar
         GameObject weaponPrefabToMount = FindWeaponPrefab(currentWeaponID); 
     
-        // 2. Si se encuentra un prefab, montarlo
+        //Si se encuentra un prefab, montarlo
         if (weaponPrefabToMount != null && weaponMountPoint != null)
         {
             MountWeapon(weaponPrefabToMount);
