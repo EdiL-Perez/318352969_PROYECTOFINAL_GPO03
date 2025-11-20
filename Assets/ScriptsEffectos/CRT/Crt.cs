@@ -24,8 +24,8 @@ public class Crt : VolumeComponent, IPostProcessComponent
     public Vector2Parameter chromaticGreen = new Vector2Parameter(new Vector2());
     public Vector2Parameter chromaticBlue = new Vector2Parameter(new Vector2());
 
-    // Grille Effect is a modified version of the shader from here:
-    // https://godotshaders.com/shader/vhs-and-crt-monitor-effect/
+    
+
     public FloatParameter grilleOpacity = new FloatParameter(0.4f);
     public FloatParameter grilleCounterOpacity = new FloatParameter(0.2f);
     public FloatParameter grilleResolution = new FloatParameter(360.0f);
