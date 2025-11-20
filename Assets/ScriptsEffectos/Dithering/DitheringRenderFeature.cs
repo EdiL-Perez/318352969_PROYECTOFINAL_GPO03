@@ -13,7 +13,7 @@ namespace PSX
             ditheringPass = new DitheringPass(RenderPassEvent.BeforeRenderingPostProcessing);
         }
 
-        //ScripstableRendererFeature is an abstract class, you need this method
+        
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
             renderer.EnqueuePass(ditheringPass);
@@ -33,7 +33,7 @@ namespace PSX
         static readonly int MainTexId = Shader.PropertyToID("_MainTex");
         static readonly int TempTargetId = Shader.PropertyToID("_TempTargetDithering");
         
-        //PROPERTIES
+        
         static readonly int PatternIndex = Shader.PropertyToID("_PatternIndex");
         static readonly int DitherThreshold = Shader.PropertyToID("_DitherThreshold");
         static readonly int DitherStrength = Shader.PropertyToID("_DitherStrength");
@@ -88,11 +88,11 @@ namespace PSX
             var source = currentTarget;
             int destination = TempTargetId;
     
-            //getting camera width and height 
+           
             var w = cameraData.camera.scaledPixelWidth;
             var h = cameraData.camera.scaledPixelHeight;
             
-            //setting parameters here 
+            
             cameraData.camera.depthTextureMode = cameraData.camera.depthTextureMode | DepthTextureMode.Depth;
             this.ditheringMaterial.SetInt(PatternIndex, this.dithering.patternIndex.value);
             this.ditheringMaterial.SetFloat(DitherThreshold, this.dithering.ditherThreshold.value);

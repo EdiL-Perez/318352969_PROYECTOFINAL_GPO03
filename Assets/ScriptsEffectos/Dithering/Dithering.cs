@@ -14,7 +14,7 @@ namespace PSX
         public FloatParameter ditherScale = new FloatParameter(2);
         
         
-        //INTERFACE REQUIREMENT 
+        
         public bool IsActive() => true;
         public bool IsTileCompatible() => false;
     }

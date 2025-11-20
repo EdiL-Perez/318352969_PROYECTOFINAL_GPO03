@@ -61,8 +61,7 @@ namespace PSX
             this.fog.ambientColor.value = this.ambientColor;
             
             
-            //ACCESSING PARAMS 
-            // this.fog.parameters.value
+       
         }
     }
 }

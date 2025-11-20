@@ -13,7 +13,7 @@ namespace PSX
             fogPass = new FogPass(RenderPassEvent.BeforeRenderingPostProcessing);
         }
 
-        //ScripstableRendererFeature is an abstract class, you need this method
+        
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
             renderer.EnqueuePass(fogPass);
@@ -93,11 +93,11 @@ namespace PSX
             var source = currentTarget;
             int destination = TempTargetId;
     
-            //getting camera width and height 
+            
             var w = cameraData.camera.scaledPixelWidth;
             var h = cameraData.camera.scaledPixelHeight;
             
-            //setting parameters here 
+            //e 
             cameraData.camera.depthTextureMode = cameraData.camera.depthTextureMode | DepthTextureMode.Depth;
             this.fogMaterial.SetFloat(FogDensity, this.fog.fogDensity.value);
             this.fogMaterial.SetFloat(FogDistance, this.fog.fogDistance.value);
