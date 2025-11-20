@@ -336,11 +336,7 @@
             "m_Id": "06297855918f4a8597b0291eb421156f"
         }
     ],
-    "m_StickyNoteDatas": [
-        {
-            "m_Id": "ed00ff06f31c496b98d0bfbd0c171651"
-        }
-    ],
+    "m_StickyNoteDatas": [],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -4195,7 +4191,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 2,
     "m_Type": "UnityEditor.ShaderGraph.TransformNode",
     "m_ObjectId": "4fab4e213cc44a288d05a25e649d4e86",
     "m_Group": {
@@ -4425,7 +4421,7 @@
     "m_ObjectId": "54c9b4db117640d88c810254761c0769",
     "m_Title": "Skybox Color",
     "m_Position": {
-        "x": 2513.0,
+        "x": 2546.0,
         "y": 1358.0
     }
 }
@@ -5062,7 +5058,7 @@
 }
 
 {
-    "m_SGVersion": 0,
+    "m_SGVersion": 2,
     "m_Type": "UnityEditor.ShaderGraph.TransformNode",
     "m_ObjectId": "69bb53114ce8ba808c2c25b767b8de9c",
     "m_Group": {
@@ -9225,26 +9221,6 @@
     "m_Position": {
         "x": 1634.0,
         "y": 439.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
-    "m_ObjectId": "ed00ff06f31c496b98d0bfbd0c171651",
-    "m_Title": "Can use depending on your environment lighting settings",
-    "m_Content": "Write something here",
-    "m_TextSize": 1,
-    "m_Theme": 0,
-    "m_Position": {
-        "serializedVersion": "2",
-        "x": 2538.0,
-        "y": 1737.0,
-        "width": 648.0,
-        "height": 105.0
-    },
-    "m_Group": {
-        "m_Id": "54c9b4db117640d88c810254761c0769"
     }
 }
 
